@@ -35,10 +35,37 @@ input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-ou
   background:radial-gradient(circle at 90% 10%,rgba(54,211,154,.20),transparent 35%),linear-gradient(120deg,#122846,#0c1930);
   border:1px solid var(--line); border-radius:clamp(18px,2vw,24px); padding:clamp(17px,2.4vw,26px); box-shadow:var(--shadow)
 }
-.hero-top{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;flex-wrap:wrap}
-.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:800}
-h1{margin:7px 0 8px;font-size:clamp(27px,4vw,46px);line-height:1.1;letter-spacing:-.045em}
-.hero p{margin:0;max-width:790px;color:var(--muted);line-height:1.55;font-size:clamp(13px,1.25vw,15px)}
+.hero-top {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:800}.kicker {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .16em;
+    color: var(--accent);
+    font-weight: 800;
+}
+
+h1 {
+    text-align: center;
+    margin: 7px 0 8px;
+    font-size: clamp(27px, 4vw, 46px);
+    line-height: 1.1;
+    letter-spacing: -.045em;
+}
+.hero p {
+    margin: 0;
+    max-width: 790px;
+    color: var(--muted);
+    line-height: 1.55;
+    font-size: clamp(13px, 1.25vw, 15px);
+}
 .actions{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;align-items:center}
 .btn{
   min-height:var(--touch); border:1px solid var(--line); background:var(--panel2); color:var(--text);
@@ -55,25 +82,54 @@ h1{margin:7px 0 8px;font-size:clamp(27px,4vw,46px);line-height:1.1;letter-spacin
 .stat-label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .stat-value{margin-top:7px;font-size:clamp(21px,3vw,24px);font-weight:800;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .stat-value small{font-size:13px;color:var(--muted);font-weight:500}
-.nav{
-  display:flex;gap:8px;margin:18px 0;padding:6px;background:rgba(14,27,51,.96);border-radius:15px;border:1px solid var(--line);
-  overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch
+.nav {
+    display: flex;
+    gap: 8px;
+    margin: 18px 0;
+    padding: 6px;
+    background: rgba(14, 27, 51, .96);
+    border-radius: 15px;
+    border: 1px solid var(--line);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
 }
 .nav::-webkit-scrollbar,.filters::-webkit-scrollbar,.bracket::-webkit-scrollbar{display:none}
 .tab{min-height:var(--touch);padding:11px 18px;white-space:nowrap;border:0;border-radius:10px;color:var(--muted);background:transparent;font-weight:700;cursor:pointer;flex:0 0 auto}
 .tab.active{color:#061521;background:var(--accent)}
 .panel{display:none}.panel.active{display:block}
-.section-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:18px 0 14px;flex-wrap:wrap}
+.section-head {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    margin: 18px 0 14px;
+    flex-wrap: wrap;
+    text-align: center;
+}
 .section-head h2{font-size:clamp(19px,2vw,22px);margin:0;line-height:1.25}
 .section-note{font-size:13px;color:var(--muted);margin-top:2px}
 .filters{display:flex;gap:6px;overflow-x:auto;padding:2px 1px 7px;scrollbar-width:none;-webkit-overflow-scrolling:touch;max-width:100%}
 .filter{min-height:44px;min-width:44px;padding:8px 11px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--muted);cursor:pointer;flex:0 0 auto;font-weight:600}
 .filter.active{background:#294f85;color:#fff;border-color:#4776bc}
-.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.group-grid {
+    display: flex;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    flex-direction: column;
+}
 .group-card,.qual-card,.locked,.rules,.champion{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow)}
 .group-card{min-width:0;padding:clamp(11px,1.4vw,15px)}
 .group-card h3{margin:0;font-size:17px}
-.group-title{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px}
+.group-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+    flex-direction: column;
+}
 .pill{font-size:11px;padding:5px 8px;border-radius:999px;background:#1b304f;color:var(--muted);font-weight:700;white-space:nowrap}
 .pill.complete{background:rgba(54,211,154,.14);color:var(--accent)}
 .card-layout {
@@ -89,9 +145,22 @@ h1{margin:7px 0 8px;font-size:clamp(27px,4vw,46px);line-height:1.1;letter-spacin
     min-width: 0;
     align-content: flex-start;
 }
-.fixture{min-width:0;background:#0d192f;border:1px solid #1e3252;border-radius:11px;padding:8px}
+.fixture {
+    text-align: center;
+    min-width: 0;
+    background: #0d192f;
+    border: 1px solid #1e3252;
+    border-radius: 11px;
+    padding: 8px;
+}
 .fixture-meta{font-size:11px;color:var(--muted);margin-bottom:7px}
-.fixture-line{display:grid;grid-template-columns:minmax(0,1fr) 42px 12px 42px minmax(0,1fr);align-items:center;gap:5px;min-width:0}
+.fixture-line {
+    display: inline-grid;
+    grid-template-columns: minmax(0, 1fr) 42px 12px 42px minmax(0, 1fr);
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+}
 .home{text-align:right}.away{text-align:left}
 .team-name{display:block;min-width:0;font-size:12px;line-height:1.18;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .team-code{display:block;color:var(--muted);font-size:10px;font-weight:700;margin-top:2px;overflow:hidden;text-overflow:ellipsis}
@@ -109,7 +178,15 @@ td.team-cell{text-align:left;font-weight:650;max-width:150px;white-space:nowrap;
 .rank{color:var(--muted);width:22px}
 tr.direct{background:rgba(54,211,154,.10)}
 tr.third{background:rgba(169,124,255,.11)}
-.legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:9px;color:var(--muted);font-size:11px}
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 9px;
+    color: var(--muted);
+    font-size: 11px;
+    justify-content: center;
+}
 .dot{display:inline-block;width:8px;height:8px;border-radius:10px;margin-right:5px}
 .dot.direct{background:var(--accent)}.dot.third{background:var(--third)}
 .tie-box{margin-top:10px;border:1px solid rgba(247,198,75,.38);background:rgba(247,198,75,.08);border-radius:12px;padding:10px;font-size:12px}
@@ -161,9 +238,24 @@ tr.third{background:rgba(169,124,255,.11)}
 .pending{color:#7f94b5;font-style:italic}
 .penalty{margin-top:8px;padding:8px;border-radius:9px;background:rgba(247,198,75,.08);border:1px solid rgba(247,198,75,.25);font-size:11px;color:var(--gold)}
 .penalty select{display:block;margin-top:5px;width:100%;min-height:44px;background:#101f39;border:1px solid #3d567a;color:#fff;border-radius:7px;padding:6px}
-.champion{padding:17px;margin-bottom:14px;background:linear-gradient(100deg,rgba(247,198,75,.14),rgba(54,211,154,.1));border-color:rgba(247,198,75,.35);display:flex;justify-content:space-between;align-items:center;gap:12px}
+.champion {
+    padding: 17px;
+    margin-bottom: 14px;
+    background: linear-gradient(100deg, rgba(247, 198, 75, .14), rgba(54, 211, 154, .1));
+    border-color: rgba(247, 198, 75, .35);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
 .champion h3{margin:4px 0 0;font-size:clamp(21px,3vw,26px);overflow-wrap:anywhere}
-.champion .cup{font-size:36px}
+.champion .cup {
+    display: block;
+    width: 60px;
+    object-fit: contain;
+    flex: 0 0 auto;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, .32));
+}
 .toast{position:fixed;bottom:max(20px,env(safe-area-inset-bottom));right:max(12px,env(safe-area-inset-right));left:auto;max-width:min(380px,calc(100vw - 24px));border-radius:12px;background:#192c49;border:1px solid #355277;color:#fff;padding:12px 16px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);transition:.25s;pointer-events:none;z-index:99}
 .toast.show{opacity:1;transform:translateY(0)}
 .hidden{display:none}
@@ -190,7 +282,14 @@ tr.third{background:rgba(169,124,255,.11)}
   .actions .btn{width:100%;padding-inline:8px;font-size:13px}
   .summary{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:14px}
   .stat{padding:11px 10px;border-radius:13px}
-  .nav{margin:11px 0 15px;border-radius:13px;gap:5px;padding:5px}
+    .nav {
+        position: sticky;
+        top: max(6px, env(safe-area-inset-top));
+        z-index: 20;
+        justify-content: flex-start;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
   .tab{flex:1 0 max-content;padding:10px 13px;font-size:13px}
   .section-head{display:block;margin:15px 0 10px}
   .section-head .filters{margin-top:11px}
@@ -231,7 +330,7 @@ tr.third{background:rgba(169,124,255,.11)}
   .ko-team{grid-template-columns:minmax(0,1fr) 46px;min-height:48px}
   .ko-team .score{font-size:16px;width:44px;height:44px}
   .champion{padding:12px 13px;border-radius:15px}
-  .champion .cup{font-size:31px}
+  .champion .cup{width:46px;height:120px}
   .toast{right:12px;left:12px;max-width:none;text-align:center}
 }
 @media (max-width:390px){
@@ -257,11 +356,224 @@ tr.third{background:rgba(169,124,255,.11)}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
+
+/* ==========================
+   WC26 COLOUR-SYSTEM REFRESH
+   Inline, dependency-free theme derived from the supplied WC26 colour board.
+   ========================== */
+:root{
+  --wc-black:#050505;
+  --wc-ivory:#ffffff;
+  --wc-burgundy:#760e12;
+  --wc-purple:#6000ee;
+  --wc-indigo:#242d83;
+  --wc-blue:#3156f4;
+  --wc-red:#ef190d;
+  --wc-coral:#ff947c;
+  --wc-mint:#05dfca;
+  --wc-green:#005449;
+  --wc-lime:#a5ef00;
+  --wc-yellow:#eeff32;
+  --wc-sky:#79a4eb;
+  --wc-pink:#e61c61;
+
+  --bg:#050706;
+  --bg2:#091615;
+  --panel:#0c1716;
+  --panel2:#12211f;
+  --line:rgba(5,223,202,.19);
+  --text:#fff;
+  --muted:#a7bfba;
+  --accent:var(--wc-lime);
+  --gold:var(--wc-yellow);
+  --blue:var(--wc-blue);
+  --danger:var(--wc-red);
+  --third:#a97cff;
+  --shadow:0 20px 44px rgba(0,0,0,.34);
+}
+html{color-scheme:dark}
+body{
+  font-family:"Noto Sans","Segoe UI",Arial,sans-serif;
+  background:
+    radial-gradient(circle at 95% 0%, rgba(49,86,244,.20), transparent 29%),
+    radial-gradient(circle at 4% 9%, rgba(96,0,238,.20), transparent 24%),
+    radial-gradient(circle at 82% 82%, rgba(5,223,202,.10), transparent 29%),
+    var(--wc-black);
+}
+body::before{
+  content:""; position:fixed; inset:0 0 auto 0; height:10px; z-index:100;
+  background:linear-gradient(90deg,var(--wc-purple) 0 17%,var(--wc-mint) 17% 35%,var(--wc-lime) 35% 51%,var(--wc-red) 51% 68%,var(--wc-blue) 68% 84%,var(--wc-yellow) 84%);
+}
+.team-badge {
+    width: 30px;
+}
+.app{position:relative;z-index:1;padding-top:max(21px,env(safe-area-inset-top))}
+.hero{
+  position:relative; overflow:hidden; border-color:rgba(5,223,202,.22);
+  background:
+    radial-gradient(circle at 88% 32%,rgba(165,239,0,.12),transparent 24%),
+    radial-gradient(circle at 71% 0%,rgba(49,86,244,.18),transparent 30%),
+    linear-gradient(130deg,#050706 0%,#081413 57%,#0a1917 100%);
+}
+.hero::after{
+  content:""; position:absolute; z-index:0; right:-54px; bottom:-58px;
+  width:min(380px,42vw); aspect-ratio:1; opacity:.22; pointer-events:none;
+  border-radius:42% 0 0 0;
+  background:
+    radial-gradient(circle at 0 0,transparent 0 34%,var(--wc-blue) 35% 48%,transparent 49%),
+    radial-gradient(circle at 34% 27%,transparent 0 39%,var(--wc-mint) 40% 56%,transparent 57%),
+    linear-gradient(135deg,var(--wc-purple),var(--wc-red));
+}
+.hero-top,.summary{position:relative;z-index:1}
+.brand-strip{
+  position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;
+  gap:22px;margin:-4px 0 clamp(14px,2vw,22px);padding-bottom:clamp(13px,1.8vw,18px);
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+.wc-lockup{display:flex;align-items:center;gap:14px;color:#fff;min-width:0}
+.wc-mark{display:block;width:74px;height:74px;flex:0 0 74px;object-fit:contain;filter:drop-shadow(0 9px 18px rgba(0,0,0,.36))}
+.wc-wordmark{font-family:"Arial Black","Noto Sans",Arial,sans-serif;font-weight:950;line-height:.9;letter-spacing:-.055em;text-transform:uppercase}
+.wc-wordmark .fifa{display:block;font-size:clamp(13px,1.1vw,16px);letter-spacing:-.02em;margin-bottom:3px}
+.wc-wordmark .world{display:block;font-size:clamp(21px,2.15vw,30px)}
+.wc-wordmark .year{display:inline-block;font-size:clamp(23px,2.35vw,33px);margin-left:4px}
+.brand-pattern{
+  display:grid;grid-template-columns:repeat(5,38px);height:56px;overflow:hidden;
+  border-radius:10px;flex:0 0 auto;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)
+}
+.brand-pattern i{display:block}
+.brand-pattern i:nth-child(1){background:var(--wc-purple);border-radius:0 30px 0 0}
+.brand-pattern i:nth-child(2){background:var(--wc-mint);border-radius:0 0 0 32px}
+.brand-pattern i:nth-child(3){background:var(--wc-lime);border-radius:32px 0 0 0}
+.brand-pattern i:nth-child(4){background:var(--wc-red);border-radius:0 0 32px 0}
+.brand-pattern i:nth-child(5){background:var(--wc-blue);border-radius:0 0 0 32px}
+.kicker{color:var(--wc-lime)}
+h1{font-family:"Arial Black","Noto Sans","Segoe UI",Arial,sans-serif;text-transform:uppercase;letter-spacing:-.058em}
+.hero p{color:var(--muted)}
+.btn{border-color:rgba(5,223,202,.18);background:#10201e}
+.btn:hover{border-color:var(--wc-mint);background:#142725}
+.btn.primary,.tab.active{
+  color:#061008;border-color:transparent;
+  background:linear-gradient(90deg,var(--wc-lime),var(--wc-mint));
+}
+.btn.danger{color:#ffb8ad;border-color:rgba(239,25,13,.42)}
+.stat{border-color:rgba(5,223,202,.17);background:rgba(0,84,73,.14)}
+.stat-value{color:#fff}.stat-value strong{color:var(--wc-lime)}
+.nav{background:rgba(6,13,12,.93);border-color:rgba(5,223,202,.18)}
+.filter{border-color:rgba(5,223,202,.16);background:#0b1715}
+.filter.active{background:var(--wc-purple);border-color:var(--wc-purple);color:#fff}
+.group-card,.qual-card,.locked,.rules,.champion{background:var(--panel);border-color:rgba(5,223,202,.19)}
+.group-title h3,.qual-header h3{font-family:"Arial Black","Noto Sans",Arial,sans-serif;text-transform:uppercase;letter-spacing:-.035em}
+.pill{background:rgba(49,86,244,.16);color:var(--wc-sky)}
+.pill.complete{color:#07110b;background:var(--wc-lime)}
+.fixture{
+  background:linear-gradient(110deg,rgba(5,223,202,.055),rgba(96,0,238,.03)),#081110;
+  border-color:rgba(5,223,202,.13);
+}
+.fixture:focus-within{border-color:rgba(165,239,0,.52);box-shadow:0 0 0 1px rgba(165,239,0,.25)}
+.score{background:#07110f;border-color:rgba(5,223,202,.28);border-radius:10px}
+.score:focus{outline:2px solid var(--wc-lime)}
+tr.direct{background:rgba(165,239,0,.09)}
+tr.third{background:rgba(96,0,238,.13)}
+.dot.direct{background:var(--wc-lime)} .dot.third{background:var(--wc-purple)}
+.table-wrap{border-color:rgba(5,223,202,.15)}
+td{border-color:rgba(255,255,255,.075)}
+.status-note.good{border-color:rgba(165,239,0,.32);background:rgba(165,239,0,.07);color:#e6ffb0}
+.status-note.warn{border-color:rgba(238,255,50,.32);background:rgba(238,255,50,.07);color:#fbffbb}
+.combo-chip{border-color:rgba(5,223,202,.18);background:#091413}
+.combo-chip strong{color:var(--wc-lime)}
+
+/* Inline national colour badges (not federation crests) */
+.team-flex{display:inline-flex;align-items:center;gap:7px;min-width:0;max-width:100%}
+.team-flex.reverse{flex-direction:row-reverse}
+.team-copy{display:flex;flex-direction:column;min-width:0;max-width:100%;line-height:1.13}
+.team-copy .label{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.team-flex.reverse .team-copy{text-align:right}
+.team-badge.hero-badge {
+    width: 50px;
+    flex-basis: 38px;
+}
+.team-cell .team-flex{vertical-align:middle}
+.team-cell .team-badge{width:22px;flex-basis:21px}
+.fixture .team-badge{width:30px;flex-basis:26px}
+.fixture .home .team-flex{justify-content:flex-end}
+.fixture .away .team-flex{justify-content:flex-start;width:100%}
+.fixture .team-name{white-space:normal}
+.tbd-mark{
+  flex:0 0 25px;width:25px;height:25px;display:inline-flex;align-items:center;justify-content:center;
+  border-radius:50%;background:#182321;color:#758a86;font-weight:800;font-size:12px
+}
+
+/* Tournament-stage colour route */
+.round{--stage:var(--wc-mint);--stage-soft:rgba(5,223,202,.10)}
+.round.stage-round-of-32{--stage:var(--wc-mint);--stage-soft:rgba(5,223,202,.11)}
+.round.stage-round-of-16{--stage:var(--wc-blue);--stage-soft:rgba(49,86,244,.13)}
+.round.stage-quarter-finals{--stage:var(--wc-purple);--stage-soft:rgba(96,0,238,.15)}
+.round.stage-semi-finals{--stage:var(--wc-red);--stage-soft:rgba(239,25,13,.13)}
+.round.stage-third-place-match{--stage:var(--wc-coral);--stage-soft:rgba(255,148,124,.12)}
+.round.stage-final{--stage:var(--wc-yellow);--stage-soft:rgba(238,255,50,.12)}
+.round h3{
+  color:#fff;background:linear-gradient(90deg,var(--stage-soft),transparent);
+  border-radius:10px;border-left:5px solid var(--stage);padding:11px 10px;
+  text-transform:uppercase;letter-spacing:.02em;font-family:"Arial Black","Noto Sans",Arial,sans-serif;
+}
+.ko-match{
+  background:linear-gradient(145deg,var(--stage-soft),rgba(0,0,0,0) 31%),var(--panel);
+  border-color:rgba(255,255,255,.10);border-top:3px solid var(--stage)
+}
+.ko-team{background:#071110}
+.round .ko-team.winner{
+  border-color:var(--stage);
+  background:var(--stage-soft);
+  box-shadow:inset 3px 0 0 var(--stage)
+}
+.round-jump .filter.stage-round-of-32{border-bottom:3px solid var(--wc-mint)}
+.round-jump .filter.stage-round-of-16{border-bottom:3px solid var(--wc-blue)}
+.round-jump .filter.stage-quarter-finals{border-bottom:3px solid var(--wc-purple)}
+.round-jump .filter.stage-semi-finals{border-bottom:3px solid var(--wc-red)}
+.round-jump .filter.stage-third-place-match{border-bottom:3px solid var(--wc-coral)}
+.round-jump .filter.stage-final{border-bottom:3px solid var(--wc-yellow)}
+.penalty{color:var(--wc-yellow);border-color:rgba(238,255,50,.27);background:rgba(238,255,50,.065)}
+.champion{
+  overflow:hidden;position:relative;
+  background:linear-gradient(95deg,rgba(238,255,50,.16),rgba(5,223,202,.10),rgba(96,0,238,.08));
+  border-color:rgba(238,255,50,.48)
+}
+.champion::after{
+  content:"";position:absolute;right:-36px;top:-46px;width:130px;height:130px;border-radius:50%;
+  border:22px solid rgba(238,255,50,.12)
+}
+.champion-name{display:flex;align-items:center;gap:12px;margin-top:7px}
+.champion .cup{position:relative;z-index:1;font-size:38px}
+
+@media(max-width:700px){
+  body::before{height:7px}
+  .brand-strip{gap:12px;align-items:center}
+  .wc-mark{width:56px;height:56px;flex-basis:56px}
+  .wc-wordmark .world{font-size:19px}.wc-wordmark .year{font-size:21px}
+  .brand-pattern{grid-template-columns:repeat(5,18px);height:42px}
+  .fixture .team-flex{gap:3px}
+  .round h3{margin-top:8px}
+}
+@media(max-width:390px){
+  .brand-strip{display:block}
+  .brand-pattern{margin-top:13px;width:100%;grid-template-columns:repeat(5,1fr);height:14px}
+  .wc-lockup{justify-content:center}
+}
+
 </style>
 </head>
 <body>
+<!-- Image assets: place logo.png, cup.png and team badge files such as arg.png, bra.png and eng.png in the same folder as this HTML file. -->
 <div class="app">
   <header class="hero">
+
+    <div class="brand-strip">
+      <div class="wc-lockup" aria-label="FIFA World Cup 26">
+        <img class="wc-mark" src="logo.png" alt="FIFA World Cup 26 logo" decoding="async">
+        <div class="wc-wordmark"><span class="fifa">FIFA</span><span class="world">World Cup <span class="year">26</span></span></div>
+      </div>
+      <div class="brand-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
     <div class="hero-top">
       <div>
         <div class="kicker">World Cup 26 · Full Predictor</div>
@@ -308,6 +620,29 @@ tr.third{background:rgba(169,124,255,.11)}
 
 <script>
 const TEAMS = {"MEX":{"name":"Mexico","group":"A"},"RSA":{"name":"South Africa","group":"A"},"KOR":{"name":"South Korea","group":"A"},"CZE":{"name":"Czech Republic","group":"A"},"CAN":{"name":"Canada","group":"B"},"BIH":{"name":"Bosnia and Herzegovina","group":"B"},"QAT":{"name":"Qatar","group":"B"},"SUI":{"name":"Switzerland","group":"B"},"BRA":{"name":"Brazil","group":"C"},"MAR":{"name":"Morocco","group":"C"},"HAI":{"name":"Haiti","group":"C"},"SCO":{"name":"Scotland","group":"C"},"USA":{"name":"United States","group":"D"},"PAR":{"name":"Paraguay","group":"D"},"AUS":{"name":"Australia","group":"D"},"TUR":{"name":"Turkey","group":"D"},"GER":{"name":"Germany","group":"E"},"CUW":{"name":"Curaçao","group":"E"},"CIV":{"name":"Ivory Coast","group":"E"},"ECU":{"name":"Ecuador","group":"E"},"NED":{"name":"Netherlands","group":"F"},"JPN":{"name":"Japan","group":"F"},"SWE":{"name":"Sweden","group":"F"},"TUN":{"name":"Tunisia","group":"F"},"BEL":{"name":"Belgium","group":"G"},"EGY":{"name":"Egypt","group":"G"},"IRN":{"name":"Iran","group":"G"},"NZL":{"name":"New Zealand","group":"G"},"ESP":{"name":"Spain","group":"H"},"CPV":{"name":"Cape Verde","group":"H"},"KSA":{"name":"Saudi Arabia","group":"H"},"URU":{"name":"Uruguay","group":"H"},"FRA":{"name":"France","group":"I"},"SEN":{"name":"Senegal","group":"I"},"IRQ":{"name":"Iraq","group":"I"},"NOR":{"name":"Norway","group":"I"},"ARG":{"name":"Argentina","group":"J"},"ALG":{"name":"Algeria","group":"J"},"AUT":{"name":"Austria","group":"J"},"JOR":{"name":"Jordan","group":"J"},"POR":{"name":"Portugal","group":"K"},"COD":{"name":"DR Congo","group":"K"},"UZB":{"name":"Uzbekistan","group":"K"},"COL":{"name":"Colombia","group":"K"},"ENG":{"name":"England","group":"L"},"CRO":{"name":"Croatia","group":"L"},"GHA":{"name":"Ghana","group":"L"},"PAN":{"name":"Panama","group":"L"}};
+
+const TEAM_COLOURS = {
+  MEX:["#006847","#ffffff","#CE1126"], RSA:["#007749","#FFB81C","#DE3831"], KOR:["#ffffff","#CD2E3A","#0047A0"], CZE:["#11457E","#ffffff","#D7141A"],
+  CAN:["#D80621","#ffffff","#D80621"], BIH:["#002395","#FECB00","#ffffff"], QAT:["#8A1538","#ffffff","#8A1538"], SUI:["#D52B1E","#ffffff","#D52B1E"],
+  BRA:["#009C3B","#FFDF00","#002776"], MAR:["#C1272D","#006233","#C1272D"], HAI:["#00209F","#D21034","#ffffff"], SCO:["#005EB8","#ffffff","#005EB8"],
+  USA:["#B31942","#ffffff","#0A3161"], PAR:["#D52B1E","#ffffff","#0038A8"], AUS:["#012169","#FFCD00","#00843D"], TUR:["#E30A17","#ffffff","#E30A17"],
+  GER:["#111111","#DD0000","#FFCC00"], CUW:["#002B7F","#F9E814","#002B7F"], CIV:["#F77F00","#ffffff","#009E60"], ECU:["#FFD100","#0033A0","#EF3340"],
+  NED:["#F36C21","#ffffff","#21468B"], JPN:["#ffffff","#BC002D","#ffffff"], SWE:["#006AA7","#FECC00","#006AA7"], TUN:["#E70013","#ffffff","#E70013"],
+  BEL:["#111111","#FDDA24","#EF3340"], EGY:["#CE1126","#ffffff","#111111"], IRN:["#239F40","#ffffff","#DA0000"], NZL:["#00247D","#ffffff","#CC142B"],
+  ESP:["#AA151B","#F1BF00","#AA151B"], CPV:["#003893","#ffffff","#CF2027"], KSA:["#006C35","#ffffff","#006C35"], URU:["#ffffff","#5CBFEB","#FCD116"],
+  FRA:["#002654","#ffffff","#ED2939"], SEN:["#00853F","#FDEF42","#E31B23"], IRQ:["#CE1126","#ffffff","#000000"], NOR:["#BA0C2F","#ffffff","#00205B"],
+  ARG:["#74ACDF","#ffffff","#74ACDF"], ALG:["#006633","#ffffff","#D21034"], AUT:["#ED2939","#ffffff","#ED2939"], JOR:["#000000","#ffffff","#007A3D"],
+  POR:["#046A38","#DA291C","#FFCD00"], COD:["#007FFF","#F7D618","#CE1021"], UZB:["#0099B5","#ffffff","#1EB53A"], COL:["#FCD116","#003893","#CE1126"],
+  ENG:["#ffffff","#CE1124","#ffffff"], CRO:["#FF0000","#ffffff","#171796"], GHA:["#CE1126","#FCD116","#006B3F"], PAN:["#ffffff","#DA121A","#005293"]
+};
+function teamBadge(code, extraClass=""){
+  const filename = `${String(code).toLowerCase()}.png`;
+  return `<img class="team-badge ${extraClass}" src="${filename}" alt="" loading="lazy" decoding="async">`;
+}
+function teamInline(code, codeLine="", reverse=false){
+  return `<span class="team-flex ${reverse?"reverse":""}">${teamBadge(code)}<span class="team-copy"><span class="label">${esc(displayTeam(code))}</span>${codeLine?`<span class="team-code">${esc(codeLine)}</span>`:""}</span></span>`;
+}
+
 const GROUPS = {"A":["MEX","RSA","KOR","CZE"],"B":["CAN","BIH","QAT","SUI"],"C":["BRA","MAR","HAI","SCO"],"D":["USA","PAR","AUS","TUR"],"E":["GER","CUW","CIV","ECU"],"F":["NED","JPN","SWE","TUN"],"G":["BEL","EGY","IRN","NZL"],"H":["ESP","CPV","KSA","URU"],"I":["FRA","SEN","IRQ","NOR"],"J":["ARG","ALG","AUT","JOR"],"K":["POR","COD","UZB","COL"],"L":["ENG","CRO","GHA","PAN"]};
 const FIXTURES = [{"id":"GS01","date":"Fri 12 Jun","time":"03:00","group":"A","home":"MEX","away":"RSA"},{"id":"GS02","date":"Fri 12 Jun","time":"10:00","group":"A","home":"KOR","away":"CZE"},{"id":"GS03","date":"Sat 13 Jun","time":"03:00","group":"B","home":"CAN","away":"BIH"},{"id":"GS04","date":"Sat 13 Jun","time":"09:00","group":"D","home":"USA","away":"PAR"},{"id":"GS05","date":"Sun 14 Jun","time":"03:00","group":"B","home":"QAT","away":"SUI"},{"id":"GS06","date":"Sun 14 Jun","time":"06:00","group":"C","home":"BRA","away":"MAR"},{"id":"GS07","date":"Sun 14 Jun","time":"09:00","group":"C","home":"HAI","away":"SCO"},{"id":"GS08","date":"Sun 14 Jun","time":"12:00","group":"D","home":"AUS","away":"TUR"},{"id":"GS09","date":"Mon 15 Jun","time":"01:00","group":"E","home":"GER","away":"CUW"},{"id":"GS10","date":"Mon 15 Jun","time":"04:00","group":"F","home":"NED","away":"JPN"},{"id":"GS11","date":"Mon 15 Jun","time":"07:00","group":"E","home":"CIV","away":"ECU"},{"id":"GS12","date":"Mon 15 Jun","time":"10:00","group":"F","home":"SWE","away":"TUN"},{"id":"GS13","date":"Tue 16 Jun","time":"00:00","group":"H","home":"ESP","away":"CPV"},{"id":"GS14","date":"Tue 16 Jun","time":"03:00","group":"G","home":"BEL","away":"EGY"},{"id":"GS15","date":"Tue 16 Jun","time":"06:00","group":"H","home":"KSA","away":"URU"},{"id":"GS16","date":"Tue 16 Jun","time":"09:00","group":"G","home":"IRN","away":"NZL"},{"id":"GS17","date":"Wed 17 Jun","time":"03:00","group":"I","home":"FRA","away":"SEN"},{"id":"GS18","date":"Wed 17 Jun","time":"06:00","group":"I","home":"IRQ","away":"NOR"},{"id":"GS19","date":"Wed 17 Jun","time":"09:00","group":"J","home":"ARG","away":"ALG"},{"id":"GS20","date":"Wed 17 Jun","time":"12:00","group":"J","home":"AUT","away":"JOR"},{"id":"GS21","date":"Thu 18 Jun","time":"01:00","group":"K","home":"POR","away":"COD"},{"id":"GS22","date":"Thu 18 Jun","time":"04:00","group":"L","home":"ENG","away":"CRO"},{"id":"GS23","date":"Thu 18 Jun","time":"07:00","group":"L","home":"GHA","away":"PAN"},{"id":"GS24","date":"Thu 18 Jun","time":"10:00","group":"K","home":"UZB","away":"COL"},{"id":"GS25","date":"Fri 19 Jun","time":"00:00","group":"A","home":"CZE","away":"RSA"},{"id":"GS26","date":"Fri 19 Jun","time":"03:00","group":"B","home":"SUI","away":"BIH"},{"id":"GS27","date":"Fri 19 Jun","time":"06:00","group":"B","home":"CAN","away":"QAT"},{"id":"GS28","date":"Fri 19 Jun","time":"09:00","group":"A","home":"MEX","away":"KOR"},{"id":"GS29","date":"Sat 20 Jun","time":"03:00","group":"D","home":"USA","away":"AUS"},{"id":"GS30","date":"Sat 20 Jun","time":"06:00","group":"C","home":"SCO","away":"MAR"},{"id":"GS31","date":"Sat 20 Jun","time":"09:00","group":"C","home":"BRA","away":"HAI"},{"id":"GS32","date":"Sat 20 Jun","time":"12:00","group":"D","home":"TUR","away":"PAR"},{"id":"GS33","date":"Sun 21 Jun","time":"01:00","group":"F","home":"NED","away":"SWE"},{"id":"GS34","date":"Sun 21 Jun","time":"04:00","group":"E","home":"GER","away":"CIV"},{"id":"GS35","date":"Sun 21 Jun","time":"08:00","group":"E","home":"ECU","away":"CUW"},{"id":"GS36","date":"Sun 21 Jun","time":"12:00","group":"F","home":"TUN","away":"JPN"},{"id":"GS37","date":"Mon 22 Jun","time":"00:00","group":"H","home":"ESP","away":"KSA"},{"id":"GS38","date":"Mon 22 Jun","time":"03:00","group":"G","home":"BEL","away":"IRN"},{"id":"GS39","date":"Mon 22 Jun","time":"06:00","group":"H","home":"URU","away":"CPV"},{"id":"GS40","date":"Mon 22 Jun","time":"09:00","group":"G","home":"NZL","away":"EGY"},{"id":"GS41","date":"Tue 23 Jun","time":"01:00","group":"J","home":"ARG","away":"AUT"},{"id":"GS42","date":"Tue 23 Jun","time":"05:00","group":"I","home":"FRA","away":"IRQ"},{"id":"GS43","date":"Tue 23 Jun","time":"08:00","group":"I","home":"NOR","away":"SEN"},{"id":"GS44","date":"Tue 23 Jun","time":"11:00","group":"J","home":"JOR","away":"ALG"},{"id":"GS45","date":"Wed 24 Jun","time":"01:00","group":"K","home":"POR","away":"UZB"},{"id":"GS46","date":"Wed 24 Jun","time":"04:00","group":"L","home":"ENG","away":"GHA"},{"id":"GS47","date":"Wed 24 Jun","time":"07:00","group":"L","home":"PAN","away":"CRO"},{"id":"GS48","date":"Wed 24 Jun","time":"10:00","group":"K","home":"COL","away":"COD"},{"id":"GS49","date":"Thu 25 Jun","time":"03:00","group":"B","home":"SUI","away":"CAN"},{"id":"GS50","date":"Thu 25 Jun","time":"03:00","group":"B","home":"BIH","away":"QAT"},{"id":"GS51","date":"Thu 25 Jun","time":"06:00","group":"C","home":"SCO","away":"BRA"},{"id":"GS52","date":"Thu 25 Jun","time":"06:00","group":"C","home":"MAR","away":"HAI"},{"id":"GS53","date":"Thu 25 Jun","time":"09:00","group":"A","home":"CZE","away":"MEX"},{"id":"GS54","date":"Thu 25 Jun","time":"09:00","group":"A","home":"RSA","away":"KOR"},{"id":"GS55","date":"Fri 26 Jun","time":"04:00","group":"E","home":"CUW","away":"CIV"},{"id":"GS56","date":"Fri 26 Jun","time":"04:00","group":"E","home":"ECU","away":"GER"},{"id":"GS57","date":"Fri 26 Jun","time":"07:00","group":"F","home":"JPN","away":"SWE"},{"id":"GS58","date":"Fri 26 Jun","time":"07:00","group":"F","home":"TUN","away":"NED"},{"id":"GS59","date":"Fri 26 Jun","time":"10:00","group":"D","home":"TUR","away":"USA"},{"id":"GS60","date":"Fri 26 Jun","time":"10:00","group":"D","home":"PAR","away":"AUS"},{"id":"GS61","date":"Sat 27 Jun","time":"03:00","group":"I","home":"NOR","away":"FRA"},{"id":"GS62","date":"Sat 27 Jun","time":"03:00","group":"I","home":"SEN","away":"IRQ"},{"id":"GS63","date":"Sat 27 Jun","time":"08:00","group":"H","home":"URU","away":"ESP"},{"id":"GS64","date":"Sat 27 Jun","time":"08:00","group":"H","home":"CPV","away":"KSA"},{"id":"GS65","date":"Sat 27 Jun","time":"11:00","group":"G","home":"NZL","away":"BEL"},{"id":"GS66","date":"Sat 27 Jun","time":"11:00","group":"G","home":"EGY","away":"IRN"},{"id":"GS67","date":"Sun 28 Jun","time":"05:00","group":"L","home":"PAN","away":"ENG"},{"id":"GS68","date":"Sun 28 Jun","time":"05:00","group":"L","home":"CRO","away":"GHA"},{"id":"GS69","date":"Sun 28 Jun","time":"07:30","group":"K","home":"COL","away":"POR"},{"id":"GS70","date":"Sun 28 Jun","time":"07:30","group":"K","home":"COD","away":"UZB"},{"id":"GS71","date":"Sun 28 Jun","time":"10:00","group":"J","home":"JOR","away":"ARG"},{"id":"GS72","date":"Sun 28 Jun","time":"10:00","group":"J","home":"ALG","away":"AUT"}];
 const THIRD_COMBINATIONS = {"EFGHIJKL":[1,"EJIFHGLK"],"DFGHIJKL":[2,"HGIDJFLK"],"DEGHIJKL":[3,"EJIDHGLK"],"DEFHIJKL":[4,"EJIDHFLK"],"DEFGIJKL":[5,"EGIDJFLK"],"DEFGHJKL":[6,"EGJDHFLK"],"DEFGHIKL":[7,"EGIDHFLK"],"DEFGHIJL":[8,"EGJDHFLI"],"DEFGHIJK":[9,"EGJDHFIK"],"CFGHIJKL":[10,"HGICJFLK"],"CEGHIJKL":[11,"EJICHGLK"],"CEFHIJKL":[12,"EJICHFLK"],"CEFGIJKL":[13,"EGICJFLK"],"CEFGHJKL":[14,"EGJCHFLK"],"CEFGHIKL":[15,"EGICHFLK"],"CEFGHIJL":[16,"EGJCHFLI"],"CEFGHIJK":[17,"EGJCHFIK"],"CDGHIJKL":[18,"HGICJDLK"],"CDFHIJKL":[19,"CJIDHFLK"],"CDFGIJKL":[20,"CGIDJFLK"],"CDFGHJKL":[21,"CGJDHFLK"],"CDFGHIKL":[22,"CGIDHFLK"],"CDFGHIJL":[23,"CGJDHFLI"],"CDFGHIJK":[24,"CGJDHFIK"],"CDEHIJKL":[25,"EJICHDLK"],"CDEGIJKL":[26,"EGICJDLK"],"CDEGHJKL":[27,"EGJCHDLK"],"CDEGHIKL":[28,"EGICHDLK"],"CDEGHIJL":[29,"EGJCHDLI"],"CDEGHIJK":[30,"EGJCHDIK"],"CDEFIJKL":[31,"CJEDIFLK"],"CDEFHJKL":[32,"CJEDHFLK"],"CDEFHIKL":[33,"CEIDHFLK"],"CDEFHIJL":[34,"CJEDHFLI"],"CDEFHIJK":[35,"CJEDHFIK"],"CDEFGJKL":[36,"CGEDJFLK"],"CDEFGIKL":[37,"CGEDIFLK"],"CDEFGIJL":[38,"CGEDJFLI"],"CDEFGIJK":[39,"CGEDJFIK"],"CDEFGHKL":[40,"CGEDHFLK"],"CDEFGHJL":[41,"CGJDHFLE"],"CDEFGHJK":[42,"CGJDHFEK"],"CDEFGHIL":[43,"CGEDHFLI"],"CDEFGHIK":[44,"CGEDHFIK"],"CDEFGHIJ":[45,"CGJDHFEI"],"BFGHIJKL":[46,"HJBFIGLK"],"BEGHIJKL":[47,"EJIBHGLK"],"BEFHIJKL":[48,"EJBFIHLK"],"BEFGIJKL":[49,"EJBFIGLK"],"BEFGHJKL":[50,"EJBFHGLK"],"BEFGHIKL":[51,"EGBFIHLK"],"BEFGHIJL":[52,"EJBFHGLI"],"BEFGHIJK":[53,"EJBFHGIK"],"BDGHIJKL":[54,"HJBDIGLK"],"BDFHIJKL":[55,"HJBDIFLK"],"BDFGIJKL":[56,"IGBDJFLK"],"BDFGHJKL":[57,"HGBDJFLK"],"BDFGHIKL":[58,"HGBDIFLK"],"BDFGHIJL":[59,"HGBDJFLI"],"BDFGHIJK":[60,"HGBDJFIK"],"BDEHIJKL":[61,"EJBDIHLK"],"BDEGIJKL":[62,"EJBDIGLK"],"BDEGHJKL":[63,"EJBDHGLK"],"BDEGHIKL":[64,"EGBDIHLK"],"BDEGHIJL":[65,"EJBDHGLI"],"BDEGHIJK":[66,"EJBDHGIK"],"BDEFIJKL":[67,"EJBDIFLK"],"BDEFHJKL":[68,"EJBDHFLK"],"BDEFHIKL":[69,"EIBDHFLK"],"BDEFHIJL":[70,"EJBDHFLI"],"BDEFHIJK":[71,"EJBDHFIK"],"BDEFGJKL":[72,"EGBDJFLK"],"BDEFGIKL":[73,"EGBDIFLK"],"BDEFGIJL":[74,"EGBDJFLI"],"BDEFGIJK":[75,"EGBDJFIK"],"BDEFGHKL":[76,"EGBDHFLK"],"BDEFGHJL":[77,"HGBDJFLE"],"BDEFGHJK":[78,"HGBDJFEK"],"BDEFGHIL":[79,"EGBDHFLI"],"BDEFGHIK":[80,"EGBDHFIK"],"BDEFGHIJ":[81,"HGBDJFEI"],"BCGHIJKL":[82,"HJBCIGLK"],"BCFHIJKL":[83,"HJBCIFLK"],"BCFGIJKL":[84,"IGBCJFLK"],"BCFGHJKL":[85,"HGBCJFLK"],"BCFGHIKL":[86,"HGBCIFLK"],"BCFGHIJL":[87,"HGBCJFLI"],"BCFGHIJK":[88,"HGBCJFIK"],"BCEHIJKL":[89,"EJBCIHLK"],"BCEGIJKL":[90,"EJBCIGLK"],"BCEGHJKL":[91,"EJBCHGLK"],"BCEGHIKL":[92,"EGBCIHLK"],"BCEGHIJL":[93,"EJBCHGLI"],"BCEGHIJK":[94,"EJBCHGIK"],"BCEFIJKL":[95,"EJBCIFLK"],"BCEFHJKL":[96,"EJBCHFLK"],"BCEFHIKL":[97,"EIBCHFLK"],"BCEFHIJL":[98,"EJBCHFLI"],"BCEFHIJK":[99,"EJBCHFIK"],"BCEFGJKL":[100,"EGBCJFLK"],"BCEFGIKL":[101,"EGBCIFLK"],"BCEFGIJL":[102,"EGBCJFLI"],"BCEFGIJK":[103,"EGBCJFIK"],"BCEFGHKL":[104,"EGBCHFLK"],"BCEFGHJL":[105,"HGBCJFLE"],"BCEFGHJK":[106,"HGBCJFEK"],"BCEFGHIL":[107,"EGBCHFLI"],"BCEFGHIK":[108,"EGBCHFIK"],"BCEFGHIJ":[109,"HGBCJFEI"],"BCDHIJKL":[110,"HJBCIDLK"],"BCDGIJKL":[111,"IGBCJDLK"],"BCDGHJKL":[112,"HGBCJDLK"],"BCDGHIKL":[113,"HGBCIDLK"],"BCDGHIJL":[114,"HGBCJDLI"],"BCDGHIJK":[115,"HGBCJDIK"],"BCDFIJKL":[116,"CJBDIFLK"],"BCDFHJKL":[117,"CJBDHFLK"],"BCDFHIKL":[118,"CIBDHFLK"],"BCDFHIJL":[119,"CJBDHFLI"],"BCDFHIJK":[120,"CJBDHFIK"],"BCDFGJKL":[121,"CGBDJFLK"],"BCDFGIKL":[122,"CGBDIFLK"],"BCDFGIJL":[123,"CGBDJFLI"],"BCDFGIJK":[124,"CGBDJFIK"],"BCDFGHKL":[125,"CGBDHFLK"],"BCDFGHJL":[126,"CGBDHFLJ"],"BCDFGHJK":[127,"HGBCJFDK"],"BCDFGHIL":[128,"CGBDHFLI"],"BCDFGHIK":[129,"CGBDHFIK"],"BCDFGHIJ":[130,"HGBCJFDI"],"BCDEIJKL":[131,"EJBCIDLK"],"BCDEHJKL":[132,"EJBCHDLK"],"BCDEHIKL":[133,"EIBCHDLK"],"BCDEHIJL":[134,"EJBCHDLI"],"BCDEHIJK":[135,"EJBCHDIK"],"BCDEGJKL":[136,"EGBCJDLK"],"BCDEGIKL":[137,"EGBCIDLK"],"BCDEGIJL":[138,"EGBCJDLI"],"BCDEGIJK":[139,"EGBCJDIK"],"BCDEGHKL":[140,"EGBCHDLK"],"BCDEGHJL":[141,"HGBCJDLE"],"BCDEGHJK":[142,"HGBCJDEK"],"BCDEGHIL":[143,"EGBCHDLI"],"BCDEGHIK":[144,"EGBCHDIK"],"BCDEGHIJ":[145,"HGBCJDEI"],"BCDEFJKL":[146,"CJBDEFLK"],"BCDEFIKL":[147,"CEBDIFLK"],"BCDEFIJL":[148,"CJBDEFLI"],"BCDEFIJK":[149,"CJBDEFIK"],"BCDEFHKL":[150,"CEBDHFLK"],"BCDEFHJL":[151,"CJBDHFLE"],"BCDEFHJK":[152,"CJBDHFEK"],"BCDEFHIL":[153,"CEBDHFLI"],"BCDEFHIK":[154,"CEBDHFIK"],"BCDEFHIJ":[155,"CJBDHFEI"],"BCDEFGKL":[156,"CGBDEFLK"],"BCDEFGJL":[157,"CGBDJFLE"],"BCDEFGJK":[158,"CGBDJFEK"],"BCDEFGIL":[159,"CGBDEFLI"],"BCDEFGIK":[160,"CGBDEFIK"],"BCDEFGIJ":[161,"CGBDJFEI"],"BCDEFGHL":[162,"CGBDHFLE"],"BCDEFGHK":[163,"CGBDHFEK"],"BCDEFGHJ":[164,"HGBCJFDE"],"BCDEFGHI":[165,"CGBDHFEI"],"AFGHIJKL":[166,"HJIFAGLK"],"AEGHIJKL":[167,"EJIAHGLK"],"AEFHIJKL":[168,"EJIFAHLK"],"AEFGIJKL":[169,"EJIFAGLK"],"AEFGHJKL":[170,"EGJFAHLK"],"AEFGHIKL":[171,"EGIFAHLK"],"AEFGHIJL":[172,"EGJFAHLI"],"AEFGHIJK":[173,"EGJFAHIK"],"ADGHIJKL":[174,"HJIDAGLK"],"ADFHIJKL":[175,"HJIDAFLK"],"ADFGIJKL":[176,"IGJDAFLK"],"ADFGHJKL":[177,"HGJDAFLK"],"ADFGHIKL":[178,"HGIDAFLK"],"ADFGHIJL":[179,"HGJDAFLI"],"ADFGHIJK":[180,"HGJDAFIK"],"ADEHIJKL":[181,"EJIDAHLK"],"ADEGIJKL":[182,"EJIDAGLK"],"ADEGHJKL":[183,"EGJDAHLK"],"ADEGHIKL":[184,"EGIDAHLK"],"ADEGHIJL":[185,"EGJDAHLI"],"ADEGHIJK":[186,"EGJDAHIK"],"ADEFIJKL":[187,"EJIDAFLK"],"ADEFHJKL":[188,"HJEDAFLK"],"ADEFHIKL":[189,"HEIDAFLK"],"ADEFHIJL":[190,"HJEDAFLI"],"ADEFHIJK":[191,"HJEDAFIK"],"ADEFGJKL":[192,"EGJDAFLK"],"ADEFGIKL":[193,"EGIDAFLK"],"ADEFGIJL":[194,"EGJDAFLI"],"ADEFGIJK":[195,"EGJDAFIK"],"ADEFGHKL":[196,"HGEDAFLK"],"ADEFGHJL":[197,"HGJDAFLE"],"ADEFGHJK":[198,"HGJDAFEK"],"ADEFGHIL":[199,"HGEDAFLI"],"ADEFGHIK":[200,"HGEDAFIK"],"ADEFGHIJ":[201,"HGJDAFEI"],"ACGHIJKL":[202,"HJICAGLK"],"ACFHIJKL":[203,"HJICAFLK"],"ACFGIJKL":[204,"IGJCAFLK"],"ACFGHJKL":[205,"HGJCAFLK"],"ACFGHIKL":[206,"HGICAFLK"],"ACFGHIJL":[207,"HGJCAFLI"],"ACFGHIJK":[208,"HGJCAFIK"],"ACEHIJKL":[209,"EJICAHLK"],"ACEGIJKL":[210,"EJICAGLK"],"ACEGHJKL":[211,"EGJCAHLK"],"ACEGHIKL":[212,"EGICAHLK"],"ACEGHIJL":[213,"EGJCAHLI"],"ACEGHIJK":[214,"EGJCAHIK"],"ACEFIJKL":[215,"EJICAFLK"],"ACEFHJKL":[216,"HJECAFLK"],"ACEFHIKL":[217,"HEICAFLK"],"ACEFHIJL":[218,"HJECAFLI"],"ACEFHIJK":[219,"HJECAFIK"],"ACEFGJKL":[220,"EGJCAFLK"],"ACEFGIKL":[221,"EGICAFLK"],"ACEFGIJL":[222,"EGJCAFLI"],"ACEFGIJK":[223,"EGJCAFIK"],"ACEFGHKL":[224,"HGECAFLK"],"ACEFGHJL":[225,"HGJCAFLE"],"ACEFGHJK":[226,"HGJCAFEK"],"ACEFGHIL":[227,"HGECAFLI"],"ACEFGHIK":[228,"HGECAFIK"],"ACEFGHIJ":[229,"HGJCAFEI"],"ACDHIJKL":[230,"HJICADLK"],"ACDGIJKL":[231,"IGJCADLK"],"ACDGHJKL":[232,"HGJCADLK"],"ACDGHIKL":[233,"HGICADLK"],"ACDGHIJL":[234,"HGJCADLI"],"ACDGHIJK":[235,"HGJCADIK"],"ACDFIJKL":[236,"CJIDAFLK"],"ACDFHJKL":[237,"HJFCADLK"],"ACDFHIKL":[238,"HFICADLK"],"ACDFHIJL":[239,"HJFCADLI"],"ACDFHIJK":[240,"HJFCADIK"],"ACDFGJKL":[241,"CGJDAFLK"],"ACDFGIKL":[242,"CGIDAFLK"],"ACDFGIJL":[243,"CGJDAFLI"],"ACDFGIJK":[244,"CGJDAFIK"],"ACDFGHKL":[245,"HGFCADLK"],"ACDFGHJL":[246,"CGJDAFLH"],"ACDFGHJK":[247,"HGJCAFDK"],"ACDFGHIL":[248,"HGFCADLI"],"ACDFGHIK":[249,"HGFCADIK"],"ACDFGHIJ":[250,"HGJCAFDI"],"ACDEIJKL":[251,"EJICADLK"],"ACDEHJKL":[252,"HJECADLK"],"ACDEHIKL":[253,"HEICADLK"],"ACDEHIJL":[254,"HJECADLI"],"ACDEHIJK":[255,"HJECADIK"],"ACDEGJKL":[256,"EGJCADLK"],"ACDEGIKL":[257,"EGICADLK"],"ACDEGIJL":[258,"EGJCADLI"],"ACDEGIJK":[259,"EGJCADIK"],"ACDEGHKL":[260,"HGECADLK"],"ACDEGHJL":[261,"HGJCADLE"],"ACDEGHJK":[262,"HGJCADEK"],"ACDEGHIL":[263,"HGECADLI"],"ACDEGHIK":[264,"HGECADIK"],"ACDEGHIJ":[265,"HGJCADEI"],"ACDEFJKL":[266,"CJEDAFLK"],"ACDEFIKL":[267,"CEIDAFLK"],"ACDEFIJL":[268,"CJEDAFLI"],"ACDEFIJK":[269,"CJEDAFIK"],"ACDEFHKL":[270,"HEFCADLK"],"ACDEFHJL":[271,"HJFCADLE"],"ACDEFHJK":[272,"HJECAFDK"],"ACDEFHIL":[273,"HEFCADLI"],"ACDEFHIK":[274,"HEFCADIK"],"ACDEFHIJ":[275,"HJECAFDI"],"ACDEFGKL":[276,"CGEDAFLK"],"ACDEFGJL":[277,"CGJDAFLE"],"ACDEFGJK":[278,"CGJDAFEK"],"ACDEFGIL":[279,"CGEDAFLI"],"ACDEFGIK":[280,"CGEDAFIK"],"ACDEFGIJ":[281,"CGJDAFEI"],"ACDEFGHL":[282,"HGFCADLE"],"ACDEFGHK":[283,"HGECAFDK"],"ACDEFGHJ":[284,"HGJCAFDE"],"ACDEFGHI":[285,"HGECAFDI"],"ABGHIJKL":[286,"HJBAIGLK"],"ABFHIJKL":[287,"HJBAIFLK"],"ABFGIJKL":[288,"IJBFAGLK"],"ABFGHJKL":[289,"HJBFAGLK"],"ABFGHIKL":[290,"HGBAIFLK"],"ABFGHIJL":[291,"HJBFAGLI"],"ABFGHIJK":[292,"HJBFAGIK"],"ABEHIJKL":[293,"EJBAIHLK"],"ABEGIJKL":[294,"EJBAIGLK"],"ABEGHJKL":[295,"EJBAHGLK"],"ABEGHIKL":[296,"EGBAIHLK"],"ABEGHIJL":[297,"EJBAHGLI"],"ABEGHIJK":[298,"EJBAHGIK"],"ABEFIJKL":[299,"EJBAIFLK"],"ABEFHJKL":[300,"EJBFAHLK"],"ABEFHIKL":[301,"EIBFAHLK"],"ABEFHIJL":[302,"EJBFAHLI"],"ABEFHIJK":[303,"EJBFAHIK"],"ABEFGJKL":[304,"EJBFAGLK"],"ABEFGIKL":[305,"EGBAIFLK"],"ABEFGIJL":[306,"EJBFAGLI"],"ABEFGIJK":[307,"EJBFAGIK"],"ABEFGHKL":[308,"EGBFAHLK"],"ABEFGHJL":[309,"HJBFAGLE"],"ABEFGHJK":[310,"HJBFAGEK"],"ABEFGHIL":[311,"EGBFAHLI"],"ABEFGHIK":[312,"EGBFAHIK"],"ABEFGHIJ":[313,"HJBFAGEI"],"ABDHIJKL":[314,"IJBDAHLK"],"ABDGIJKL":[315,"IJBDAGLK"],"ABDGHJKL":[316,"HJBDAGLK"],"ABDGHIKL":[317,"IGBDAHLK"],"ABDGHIJL":[318,"HJBDAGLI"],"ABDGHIJK":[319,"HJBDAGIK"],"ABDFIJKL":[320,"IJBDAFLK"],"ABDFHJKL":[321,"HJBDAFLK"],"ABDFHIKL":[322,"HIBDAFLK"],"ABDFHIJL":[323,"HJBDAFLI"],"ABDFHIJK":[324,"HJBDAFIK"],"ABDFGJKL":[325,"FJBDAGLK"],"ABDFGIKL":[326,"IGBDAFLK"],"ABDFGIJL":[327,"FJBDAGLI"],"ABDFGIJK":[328,"FJBDAGIK"],"ABDFGHKL":[329,"HGBDAFLK"],"ABDFGHJL":[330,"HGBDAFLJ"],"ABDFGHJK":[331,"HGBDAFJK"],"ABDFGHIL":[332,"HGBDAFLI"],"ABDFGHIK":[333,"HGBDAFIK"],"ABDFGHIJ":[334,"HGBDAFIJ"],"ABDEIJKL":[335,"EJBAIDLK"],"ABDEHJKL":[336,"EJBDAHLK"],"ABDEHIKL":[337,"EIBDAHLK"],"ABDEHIJL":[338,"EJBDAHLI"],"ABDEHIJK":[339,"EJBDAHIK"],"ABDEGJKL":[340,"EJBDAGLK"],"ABDEGIKL":[341,"EGBAIDLK"],"ABDEGIJL":[342,"EJBDAGLI"],"ABDEGIJK":[343,"EJBDAGIK"],"ABDEGHKL":[344,"EGBDAHLK"],"ABDEGHJL":[345,"HJBDAGLE"],"ABDEGHJK":[346,"HJBDAGEK"],"ABDEGHIL":[347,"EGBDAHLI"],"ABDEGHIK":[348,"EGBDAHIK"],"ABDEGHIJ":[349,"HJBDAGEI"],"ABDEFJKL":[350,"EJBDAFLK"],"ABDEFIKL":[351,"EIBDAFLK"],"ABDEFIJL":[352,"EJBDAFLI"],"ABDEFIJK":[353,"EJBDAFIK"],"ABDEFHKL":[354,"HEBDAFLK"],"ABDEFHJL":[355,"HJBDAFLE"],"ABDEFHJK":[356,"HJBDAFEK"],"ABDEFHIL":[357,"HEBDAFLI"],"ABDEFHIK":[358,"HEBDAFIK"],"ABDEFHIJ":[359,"HJBDAFEI"],"ABDEFGKL":[360,"EGBDAFLK"],"ABDEFGJL":[361,"EGBDAFLJ"],"ABDEFGJK":[362,"EGBDAFJK"],"ABDEFGIL":[363,"EGBDAFLI"],"ABDEFGIK":[364,"EGBDAFIK"],"ABDEFGIJ":[365,"EGBDAFIJ"],"ABDEFGHL":[366,"HGBDAFLE"],"ABDEFGHK":[367,"HGBDAFEK"],"ABDEFGHJ":[368,"HGBDAFEJ"],"ABDEFGHI":[369,"HGBDAFEI"],"ABCHIJKL":[370,"IJBCAHLK"],"ABCGIJKL":[371,"IJBCAGLK"],"ABCGHJKL":[372,"HJBCAGLK"],"ABCGHIKL":[373,"IGBCAHLK"],"ABCGHIJL":[374,"HJBCAGLI"],"ABCGHIJK":[375,"HJBCAGIK"],"ABCFIJKL":[376,"IJBCAFLK"],"ABCFHJKL":[377,"HJBCAFLK"],"ABCFHIKL":[378,"HIBCAFLK"],"ABCFHIJL":[379,"HJBCAFLI"],"ABCFHIJK":[380,"HJBCAFIK"],"ABCFGJKL":[381,"CJBFAGLK"],"ABCFGIKL":[382,"IGBCAFLK"],"ABCFGIJL":[383,"CJBFAGLI"],"ABCFGIJK":[384,"CJBFAGIK"],"ABCFGHKL":[385,"HGBCAFLK"],"ABCFGHJL":[386,"HGBCAFLJ"],"ABCFGHJK":[387,"HGBCAFJK"],"ABCFGHIL":[388,"HGBCAFLI"],"ABCFGHIK":[389,"HGBCAFIK"],"ABCFGHIJ":[390,"HGBCAFIJ"],"ABCEIJKL":[391,"EJBAICLK"],"ABCEHJKL":[392,"EJBCAHLK"],"ABCEHIKL":[393,"EIBCAHLK"],"ABCEHIJL":[394,"EJBCAHLI"],"ABCEHIJK":[395,"EJBCAHIK"],"ABCEGJKL":[396,"EJBCAGLK"],"ABCEGIKL":[397,"EGBAICLK"],"ABCEGIJL":[398,"EJBCAGLI"],"ABCEGIJK":[399,"EJBCAGIK"],"ABCEGHKL":[400,"EGBCAHLK"],"ABCEGHJL":[401,"HJBCAGLE"],"ABCEGHJK":[402,"HJBCAGEK"],"ABCEGHIL":[403,"EGBCAHLI"],"ABCEGHIK":[404,"EGBCAHIK"],"ABCEGHIJ":[405,"HJBCAGEI"],"ABCEFJKL":[406,"EJBCAFLK"],"ABCEFIKL":[407,"EIBCAFLK"],"ABCEFIJL":[408,"EJBCAFLI"],"ABCEFIJK":[409,"EJBCAFIK"],"ABCEFHKL":[410,"HEBCAFLK"],"ABCEFHJL":[411,"HJBCAFLE"],"ABCEFHJK":[412,"HJBCAFEK"],"ABCEFHIL":[413,"HEBCAFLI"],"ABCEFHIK":[414,"HEBCAFIK"],"ABCEFHIJ":[415,"HJBCAFEI"],"ABCEFGKL":[416,"EGBCAFLK"],"ABCEFGJL":[417,"EGBCAFLJ"],"ABCEFGJK":[418,"EGBCAFJK"],"ABCEFGIL":[419,"EGBCAFLI"],"ABCEFGIK":[420,"EGBCAFIK"],"ABCEFGIJ":[421,"EGBCAFIJ"],"ABCEFGHL":[422,"HGBCAFLE"],"ABCEFGHK":[423,"HGBCAFEK"],"ABCEFGHJ":[424,"HGBCAFEJ"],"ABCEFGHI":[425,"HGBCAFEI"],"ABCDIJKL":[426,"IJBCADLK"],"ABCDHJKL":[427,"HJBCADLK"],"ABCDHIKL":[428,"HIBCADLK"],"ABCDHIJL":[429,"HJBCADLI"],"ABCDHIJK":[430,"HJBCADIK"],"ABCDGJKL":[431,"CJBDAGLK"],"ABCDGIKL":[432,"IGBCADLK"],"ABCDGIJL":[433,"CJBDAGLI"],"ABCDGIJK":[434,"CJBDAGIK"],"ABCDGHKL":[435,"HGBCADLK"],"ABCDGHJL":[436,"HGBCADLJ"],"ABCDGHJK":[437,"HGBCADJK"],"ABCDGHIL":[438,"HGBCADLI"],"ABCDGHIK":[439,"HGBCADIK"],"ABCDGHIJ":[440,"HGBCADIJ"],"ABCDFJKL":[441,"CJBDAFLK"],"ABCDFIKL":[442,"CIBDAFLK"],"ABCDFIJL":[443,"CJBDAFLI"],"ABCDFIJK":[444,"CJBDAFIK"],"ABCDFHKL":[445,"HFBCADLK"],"ABCDFHJL":[446,"CJBDAFLH"],"ABCDFHJK":[447,"HJBCAFDK"],"ABCDFHIL":[448,"HFBCADLI"],"ABCDFHIK":[449,"HFBCADIK"],"ABCDFHIJ":[450,"HJBCAFDI"],"ABCDFGKL":[451,"CGBDAFLK"],"ABCDFGJL":[452,"CGBDAFLJ"],"ABCDFGJK":[453,"CGBDAFJK"],"ABCDFGIL":[454,"CGBDAFLI"],"ABCDFGIK":[455,"CGBDAFIK"],"ABCDFGIJ":[456,"CGBDAFIJ"],"ABCDFGHL":[457,"CGBDAFLH"],"ABCDFGHK":[458,"HGBCAFDK"],"ABCDFGHJ":[459,"HGBCAFDJ"],"ABCDFGHI":[460,"HGBCAFDI"],"ABCDEJKL":[461,"EJBCADLK"],"ABCDEIKL":[462,"EIBCADLK"],"ABCDEIJL":[463,"EJBCADLI"],"ABCDEIJK":[464,"EJBCADIK"],"ABCDEHKL":[465,"HEBCADLK"],"ABCDEHJL":[466,"HJBCADLE"],"ABCDEHJK":[467,"HJBCADEK"],"ABCDEHIL":[468,"HEBCADLI"],"ABCDEHIK":[469,"HEBCADIK"],"ABCDEHIJ":[470,"HJBCADEI"],"ABCDEGKL":[471,"EGBCADLK"],"ABCDEGJL":[472,"EGBCADLJ"],"ABCDEGJK":[473,"EGBCADJK"],"ABCDEGIL":[474,"EGBCADLI"],"ABCDEGIK":[475,"EGBCADIK"],"ABCDEGIJ":[476,"EGBCADIJ"],"ABCDEGHL":[477,"HGBCADLE"],"ABCDEGHK":[478,"HGBCADEK"],"ABCDEGHJ":[479,"HGBCADEJ"],"ABCDEGHI":[480,"HGBCADEI"],"ABCDEFKL":[481,"CEBDAFLK"],"ABCDEFJL":[482,"CJBDAFLE"],"ABCDEFJK":[483,"CJBDAFEK"],"ABCDEFIL":[484,"CEBDAFLI"],"ABCDEFIK":[485,"CEBDAFIK"],"ABCDEFIJ":[486,"CJBDAFEI"],"ABCDEFHL":[487,"HFBCADLE"],"ABCDEFHK":[488,"HEBCAFDK"],"ABCDEFHJ":[489,"HJBCAFDE"],"ABCDEFHI":[490,"HEBCAFDI"],"ABCDEFGL":[491,"CGBDAFLE"],"ABCDEFGK":[492,"CGBDAFEK"],"ABCDEFGJ":[493,"CGBDAFEJ"],"ABCDEFGI":[494,"CGBDAFEI"],"ABCDEFGH":[495,"HGBCAFDE"]};
@@ -508,7 +843,7 @@ function groupTable(result, compact=false){
   const finished=result.complete && result.unresolved.length===0;
   const rows=result.ranked.map((s,i) => {
     const rowClass=finished && i<2 ? "direct" : (finished && i===2 ? "third" : "");
-    return `<tr class="${rowClass}"><td class="rank">${i+1}</td><td class="team-cell" title="${esc(displayTeam(s.code))}">${esc(displayTeam(s.code))}</td><td>${s.p}</td><td>${s.w}</td><td>${s.d}</td><td>${s.l}</td><td>${s.gf}</td><td>${s.ga}</td><td>${formatGD(s.gd)}</td><td><strong>${s.pts}</strong></td></tr>`;
+    return `<tr class="${rowClass}"><td class="rank">${i+1}</td><td class="team-cell" title="${esc(displayTeam(s.code))}">${teamInline(s.code)}</td><td>${s.p}</td><td>${s.w}</td><td>${s.d}</td><td>${s.l}</td><td>${s.gf}</td><td>${s.ga}</td><td>${formatGD(s.gd)}</td><td><strong>${s.pts}</strong></td></tr>`;
   }).join("");
   return `<div class="table-wrap"><table><thead><tr><th>#</th><th style="text-align:left">Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
@@ -517,11 +852,11 @@ function fixtureLine(f){
   return `<div class="fixture">
     <div class="fixture-meta">${esc(f.date)} · ${esc(f.time)} SGT</div>
     <div class="fixture-line">
-      <span class="home team-name" title="${esc(displayTeam(f.home))}">${esc(displayTeam(f.home))}<span class="team-code">${f.home}</span></span>
+      <span class="home team-name" title="${esc(displayTeam(f.home))}">${teamInline(f.home,f.home,true)}</span>
       <input class="score" type="number" min="0" max="99" inputmode="numeric" value="${s.home ?? ""}" aria-label="${esc(displayTeam(f.home))} predicted goals" oninput="updateGroupScore('${f.id}','home',this.value)">
       <span class="dash">–</span>
       <input class="score" type="number" min="0" max="99" inputmode="numeric" value="${s.away ?? ""}" aria-label="${esc(displayTeam(f.away))} predicted goals" oninput="updateGroupScore('${f.id}','away',this.value)">
-      <span class="away team-name" title="${esc(displayTeam(f.away))}">${esc(displayTeam(f.away))}<span class="team-code">${f.away}</span></span>
+      <span class="away team-name" title="${esc(displayTeam(f.away))}">${teamInline(f.away,f.away)}</span>
     </div>
   </div>`;
 }
@@ -557,7 +892,7 @@ function renderStandings(){
   const groupCards=GROUP_LETTERS.map(g => `<article class="qual-card"><div class="qual-header"><h3>Group ${g}</h3><span class="pill ${model.results[g].complete?"complete":""}">${model.results[g].complete?"Complete":"Live"}</span></div>${groupTable(model.results[g])}${model.results[g].unresolved.map(t => tieBox("group",t)).join("")}</article>`).join("");
   const thirdRows=model.thirds.rows.map((s,i) => {
     const q=i<8 ? "direct" : "";
-    return `<tr class="${q}"><td class="rank">${i+1}</td><td class="team-cell">${esc(displayTeam(s.code))} <span class="team-code">Group ${s.group}</span></td><td>${s.p}</td><td>${s.w}</td><td>${s.d}</td><td>${s.l}</td><td>${s.gf}</td><td>${s.ga}</td><td>${formatGD(s.gd)}</td><td><strong>${s.pts}</strong></td></tr>`;
+    return `<tr class="${q}"><td class="rank">${i+1}</td><td class="team-cell">${teamInline(s.code,`Group ${s.group}`)}</td><td>${s.p}</td><td>${s.w}</td><td>${s.d}</td><td>${s.l}</td><td>${s.gf}</td><td>${s.ga}</td><td>${formatGD(s.gd)}</td><td><strong>${s.pts}</strong></td></tr>`;
   }).join("");
   const thirdCard=`<article class="qual-card third-card"><div class="qual-header"><h3>Ranking of third-placed teams</h3><span class="pill">Best 8 qualify</span></div><div class="table-wrap"><table><thead><tr><th>#</th><th style="text-align:left">Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead><tbody>${thirdRows}</tbody></table></div>${model.thirds.boundaryUnresolved.map(t => tieBox("third",t)).join("")}</article>`;
   document.getElementById("standingGrid").innerHTML=groupCards+thirdCard;
@@ -638,8 +973,9 @@ function koCard(context){
   const tied=available && Number.isInteger(result.home) && Number.isInteger(result.away) && result.home === result.away;
   const rows=teams.map((team,i) => {
     const side=i===0 ? "home" : "away";
-    return `<div class="ko-team ${winner===team?"winner":""}">
-      <div class="team-name ${!team?"pending":""}">${team?esc(displayTeam(team)):"Awaiting winner"} <span class="team-code">${esc(seeds[i])}${team?` · ${team}`:""}</span></div>
+    const identity=team ? teamInline(team,`${seeds[i]} · ${team}`) : `<span class="team-flex"><span class="tbd-mark">?</span><span class="team-copy"><span class="label pending">Awaiting winner</span><span class="team-code">${esc(seeds[i])}</span></span></span>`;
+    return `<div class="ko-team ${winner===team && team?"winner":""}">
+      <div class="team-name">${identity}</div>
       <input class="score" type="number" min="0" max="99" inputmode="numeric" ${available?"":"disabled"} value="${result[side] ?? ""}" data-ko-match="${match.no}" data-ko-side="${side}" oninput="updateKOScore(${match.no},'${side}',this.value)" aria-label="Match ${match.no} ${side} score">
     </div>`;
   }).join("");
@@ -665,15 +1001,15 @@ function renderKnockout(){
   }
   const contexts=createKnockoutContexts(model);
   const champion=contexts[104].winner;
-  const championBlock=champion ? `<div class="champion"><div><div class="kicker">Your predicted champion</div><h3>${esc(displayTeam(champion))}</h3></div><div class="cup">🏆</div></div>` : "";
+  const championBlock=champion ? `<div class="champion"><div><div class="kicker">Your predicted champion</div><div class="champion-name">${teamBadge(champion,"hero-badge")}<h3>${esc(displayTeam(champion))}</h3></div></div><img class="cup" src="cup.png" alt="World Cup trophy" decoding="async"></div>` : "";
   const qualifiedThird=model.thirds.rows.slice(0,8).map(s => s.group).join(", ");
   const mapping=THIRD_WINNER_COLUMNS.map(col => `<span class="combo-chip"><strong>1${col}</strong> vs 3${model.annex.assignments[col]}</span>`).join("");
   const combination=`<div class="status-note good">Best third-placed groups: <strong>${qualifiedThird}</strong> · Official combination row applied: <strong>#${model.annex.row}</strong></div><div class="combination">${mapping}</div>`;
   const rounds=ROUND_ORDER.map(round => {
     const games=KO_MATCHES.filter(m => m.round===round);
-    return `<div class="round" id="${roundId(round)}"><h3>${round}</h3>${games.map(m => koCard(contexts[m.no])).join("")}</div>`;
+    return `<div class="round stage-${roundId(round).replace("round-","")}" id="${roundId(round)}"><h3>${round}</h3>${games.map(m => koCard(contexts[m.no])).join("")}</div>`;
   }).join("");
-  const roundJump=`<div class="bracket-helper">Swipe sideways to view each round, or jump directly:</div><div class="round-jump" aria-label="Jump to knockout round">${ROUND_ORDER.map(round => `<button class="filter" onclick="scrollToRound('${roundId(round)}')">${round}</button>`).join("")}</div>`;
+  const roundJump=`<div class="bracket-helper">Swipe sideways to view each round, or jump directly:</div><div class="round-jump" aria-label="Jump to knockout round">${ROUND_ORDER.map(round => `<button class="filter stage-${roundId(round).replace("round-","")}" onclick="scrollToRound('${roundId(round)}')">${round}</button>`).join("")}</div>`;
   holder.innerHTML=championBlock+combination+roundJump+`<div class="bracket" aria-label="Knockout bracket">${rounds}</div>`;
 }
 function renderSummary(){
