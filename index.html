@@ -835,6 +835,125 @@ body.modal-open{overflow:hidden}
   .live-actions .btn{width:100%}
 }
 
+
+
+/* ==========================
+   TEAM INFO, FIFA RANKINGS & SQUAD STATUS
+   Ranking snapshot: FIFA/Coca-Cola Men's World Ranking, 01 April 2026.
+   ========================== */
+.team-code{white-space:normal}
+.fifa-rank-inline{color:var(--wc-lime);font-weight:800}
+.team-info-controls{display:flex;justify-content:center;margin-bottom:14px}
+.team-info-source{
+  margin:0 auto 16px;max-width:1000px;padding:12px 14px;border:1px solid rgba(5,223,202,.20);
+  border-radius:13px;background:rgba(5,223,202,.055);font-size:12px;color:var(--muted);line-height:1.55
+}
+.team-info-source strong{color:var(--text)}
+.team-info-grid {
+    display: flex;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    flex-direction: column;
+    align-items: center;
+}
+.info-group {
+    border: 1px solid rgba(5, 223, 202, .19);
+    border-radius: var(--radius);
+    background: var(--panel);
+    padding: clamp(11px, 1.4vw, 15px);
+    box-shadow: var(--shadow);
+    min-width: 800px;
+}
+.info-group h3{
+  margin:0 0 12px;text-align:center;font-size:18px;font-family:"Arial Black","Noto Sans",Arial,sans-serif;
+  text-transform:uppercase;letter-spacing:-.03em
+}
+.info-team-list{display:flex;flex-direction:column;gap:9px}
+.info-team{
+  border:1px solid rgba(255,255,255,.09);border-radius:13px;background:#07110f;
+  padding:10px;min-width:0
+}
+.info-team-top{display:flex;align-items:center;justify-content:space-between;gap:9px}
+.info-team-name{display:flex;align-items:center;gap:9px;min-width:0;font-weight:850;font-size:15px}
+.info-team-name .team-badge{width:30px;flex:0 0 30px}
+.info-team-name span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank-badge{
+  flex:0 0 auto;min-width:66px;padding:6px 8px;text-align:center;border-radius:999px;
+  background:linear-gradient(90deg,rgba(165,239,0,.14),rgba(5,223,202,.10));
+  border:1px solid rgba(165,239,0,.28);color:var(--wc-lime);font-weight:900;font-size:12px
+}
+.info-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:10px 0}
+.info-metric{min-width:0;padding:7px 5px;text-align:center;background:#0d1917;border-radius:8px}
+.info-metric small{display:block;font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.info-metric strong{display:block;margin-top:3px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.squad-details{
+  margin-top:6px;border-radius:9px;border:1px solid rgba(5,223,202,.14);background:rgba(5,223,202,.035)
+}
+.squad-details summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 10px;
+    font-size: 12px;
+    font-weight: 750;
+    color: #fff;
+    justify-content: center;
+}
+.squad-details summary::-webkit-details-marker{display:none}
+.squad-details summary::after{content:"+";font-size:18px;line-height:1;color:var(--wc-lime)}
+.squad-details[open] summary::after{content:"−"}
+.squad-body{padding:0 10px 10px;color:var(--muted);font-size:11px;line-height:1.5}
+.squad-pending{
+  margin:0;padding:9px;border-radius:8px;background:rgba(238,255,50,.055);
+  border:1px solid rgba(238,255,50,.16);color:#e7e8c1
+}
+.squad-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;margin-top:4px}
+.squad-player{
+  display:flex;justify-content:space-between;gap:6px;padding:6px 7px;border-radius:7px;
+  background:#0e1b19;color:#fff;min-width:0
+}
+.squad-player span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.squad-position{color:var(--wc-lime);font-size:9px;text-transform:uppercase;font-weight:850}
+.squad-ready{color:var(--wc-lime);font-weight:800}
+.fixture .team-code .ranking, .ko-team .team-code .ranking, .team-cell .team-code .ranking{
+  color:var(--wc-lime);font-weight:850
+}
+@media(max-width:980px){.team-info-grid{grid-template-columns:1fr}}
+@media(max-width:700px){
+  .info-group{border-radius:15px;padding:11px}
+  .info-team-name{font-size:14px}
+  .info-metrics{gap:5px}
+  .squad-list{grid-template-columns:1fr}
+  .rank-badge{font-size:11px;min-width:61px}
+}
+
+
+
+.squad-rating{display:inline-flex;gap:1px;color:var(--wc-yellow);font-size:10px;letter-spacing:-.03em;white-space:nowrap}
+.squad-rating .empty-star{opacity:.22}
+.squad-player{align-items:center}
+.squad-player-main{display:flex;flex-direction:column;min-width:0}
+.squad-player-main span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.squad-player-meta{display:flex;align-items:center;gap:6px;flex:0 0 auto}
+
+
+
+.squad-position-block{margin-top:10px}
+.squad-position-block:first-child{margin-top:4px}
+.squad-position-heading{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  margin:0 0 6px;padding:6px 8px;border-radius:8px;
+  background:linear-gradient(90deg,rgba(165,239,0,.12),rgba(5,223,202,.045));
+  border:1px solid rgba(165,239,0,.18);
+  color:#fff;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.08em
+}
+.squad-position-heading span:last-child{
+  color:var(--wc-lime);font-size:9px;font-weight:850;letter-spacing:.04em
+}
+.squad-list.grouped{margin-top:0}
+
 </style>
 </head>
 <body>
@@ -876,6 +995,7 @@ body.modal-open{overflow:hidden}
   <button id="tab-live" class="tab" role="tab" aria-controls="panel-live" aria-selected="false" onclick="openTab('live')">Live Scores <span id="liveNavBadge" class="nav-live-badge hidden">0</span></button>
     <button id="tab-groups" class="tab active" role="tab" aria-controls="panel-groups" aria-selected="true" onclick="openTab('groups')">Group Fixtures</button>
     
+    <button id="tab-teams" class="tab" role="tab" aria-controls="panel-teams" aria-selected="false" onclick="openTab('teams')">Team Info</button>
     <button id="tab-standings" class="tab" role="tab" aria-controls="panel-standings" aria-selected="false" onclick="openTab('standings')">Tables & Qualifiers</button>
     <button id="tab-knockout" class="tab" role="tab" aria-controls="panel-knockout" aria-selected="false" onclick="openTab('knockout')">Knockout Bracket</button>
   </nav>
@@ -898,6 +1018,18 @@ body.modal-open{overflow:hidden}
       <div id="groupFilters" class="filters"></div>
     </div>
     <div id="groupGrid" class="group-grid"></div>
+  </section>
+
+  <section id="panel-teams" class="panel" role="tabpanel" aria-labelledby="tab-teams">
+    <div class="section-head">
+      <div>
+        <h2>Team info & FIFA rankings</h2>
+        <div class="section-note">Compare each group using FIFA ranking, ranking points, tournament history and official squad status.</div>
+      </div>
+    </div>
+    <div class="team-info-controls"><div id="teamInfoFilters" class="filters"></div></div>
+    <div id="teamInfoNotice" class="team-info-source"></div>
+    <div id="teamInfoGrid" class="team-info-grid"></div>
   </section>
 
   <section id="panel-standings" class="panel" role="tabpanel" aria-labelledby="tab-standings">
@@ -953,6 +1085,12 @@ body.modal-open{overflow:hidden}
 <script>
 const TEAMS = {"MEX":{"name":"Mexico","group":"A"},"RSA":{"name":"South Africa","group":"A"},"KOR":{"name":"South Korea","group":"A"},"CZE":{"name":"Czech Republic","group":"A"},"CAN":{"name":"Canada","group":"B"},"BIH":{"name":"Bosnia and Herzegovina","group":"B"},"QAT":{"name":"Qatar","group":"B"},"SUI":{"name":"Switzerland","group":"B"},"BRA":{"name":"Brazil","group":"C"},"MAR":{"name":"Morocco","group":"C"},"HAI":{"name":"Haiti","group":"C"},"SCO":{"name":"Scotland","group":"C"},"USA":{"name":"United States","group":"D"},"PAR":{"name":"Paraguay","group":"D"},"AUS":{"name":"Australia","group":"D"},"TUR":{"name":"Turkey","group":"D"},"GER":{"name":"Germany","group":"E"},"CUW":{"name":"Curaçao","group":"E"},"CIV":{"name":"Ivory Coast","group":"E"},"ECU":{"name":"Ecuador","group":"E"},"NED":{"name":"Netherlands","group":"F"},"JPN":{"name":"Japan","group":"F"},"SWE":{"name":"Sweden","group":"F"},"TUN":{"name":"Tunisia","group":"F"},"BEL":{"name":"Belgium","group":"G"},"EGY":{"name":"Egypt","group":"G"},"IRN":{"name":"Iran","group":"G"},"NZL":{"name":"New Zealand","group":"G"},"ESP":{"name":"Spain","group":"H"},"CPV":{"name":"Cape Verde","group":"H"},"KSA":{"name":"Saudi Arabia","group":"H"},"URU":{"name":"Uruguay","group":"H"},"FRA":{"name":"France","group":"I"},"SEN":{"name":"Senegal","group":"I"},"IRQ":{"name":"Iraq","group":"I"},"NOR":{"name":"Norway","group":"I"},"ARG":{"name":"Argentina","group":"J"},"ALG":{"name":"Algeria","group":"J"},"AUT":{"name":"Austria","group":"J"},"JOR":{"name":"Jordan","group":"J"},"POR":{"name":"Portugal","group":"K"},"COD":{"name":"DR Congo","group":"K"},"UZB":{"name":"Uzbekistan","group":"K"},"COL":{"name":"Colombia","group":"K"},"ENG":{"name":"England","group":"L"},"CRO":{"name":"Croatia","group":"L"},"GHA":{"name":"Ghana","group":"L"},"PAN":{"name":"Panama","group":"L"}};
 
+const TEAM_INFO = {"MEX":{"rank":15,"points":1681.03,"titles":0},"RSA":{"rank":60,"points":1429.73,"titles":0},"KOR":{"rank":25,"points":1588.66,"titles":0},"CZE":{"rank":41,"points":1501.38,"titles":0},"CAN":{"rank":30,"points":1556.48,"titles":0},"BIH":{"rank":65,"points":1385.84,"titles":0},"QAT":{"rank":55,"points":1454.96,"titles":0},"SUI":{"rank":19,"points":1649.4,"titles":0},"BRA":{"rank":6,"points":1761.16,"titles":5},"MAR":{"rank":8,"points":1755.87,"titles":0},"HAI":{"rank":83,"points":1291.71,"titles":0},"SCO":{"rank":43,"points":1498.35,"titles":0},"USA":{"rank":16,"points":1673.13,"titles":0},"PAR":{"rank":40,"points":1503.5,"titles":0},"AUS":{"rank":27,"points":1580.67,"titles":0},"TUR":{"rank":22,"points":1599.04,"titles":0},"GER":{"rank":10,"points":1730.37,"titles":4},"CUW":{"rank":82,"points":1294.65,"titles":0},"CIV":{"rank":34,"points":1532.98,"titles":0},"ECU":{"rank":23,"points":1594.78,"titles":0},"NED":{"rank":7,"points":1757.87,"titles":0},"JPN":{"rank":18,"points":1660.43,"titles":0},"SWE":{"rank":38,"points":1514.77,"titles":0},"TUN":{"rank":44,"points":1483.05,"titles":0},"BEL":{"rank":9,"points":1734.71,"titles":0},"EGY":{"rank":29,"points":1563.24,"titles":0},"IRN":{"rank":21,"points":1615.3,"titles":0},"NZL":{"rank":85,"points":1281.57,"titles":0},"ESP":{"rank":2,"points":1876.4,"titles":1},"CPV":{"rank":69,"points":1366.13,"titles":0},"KSA":{"rank":61,"points":1421.43,"titles":0},"URU":{"rank":17,"points":1673.07,"titles":2},"FRA":{"rank":1,"points":1877.32,"titles":2},"SEN":{"rank":14,"points":1688.99,"titles":0},"IRQ":{"rank":57,"points":1447.14,"titles":0},"NOR":{"rank":31,"points":1550.94,"titles":0},"ARG":{"rank":3,"points":1874.81,"titles":3},"ALG":{"rank":28,"points":1564.26,"titles":0},"AUT":{"rank":24,"points":1593.45,"titles":0},"JOR":{"rank":63,"points":1391.45,"titles":0},"POR":{"rank":5,"points":1763.83,"titles":0},"COD":{"rank":46,"points":1478.35,"titles":0},"UZB":{"rank":50,"points":1465.34,"titles":0},"COL":{"rank":13,"points":1693.09,"titles":0},"ENG":{"rank":4,"points":1825.97,"titles":1},"CRO":{"rank":11,"points":1717.07,"titles":0},"GHA":{"rank":74,"points":1346.31,"titles":0},"PAN":{"rank":33,"points":1540.64,"titles":0}};
+const FIFA_RANKING_SNAPSHOT = "01 April 2026";
+const FINAL_SQUAD_SUBMISSION_DATE = "02 June 2026";
+let officialSquads = {"_instructions":"After FIFA publishes final 26-player lists, replace each empty array with official players. Format example: [{\"name\":\"Player Name\",\"position\":\"Forward\"}]. Keep file named wc26-official-squads.json beside the HTML file.","_status":"Final squads pending official FIFA publication following submissions on 02 June 2026.","MEX":[],"RSA":[],"KOR":[],"CZE":[],"CAN":[],"BIH":[],"QAT":[],"SUI":[],"BRA":[],"MAR":[],"HAI":[],"SCO":[],"USA":[],"PAR":[],"AUS":[],"TUR":[],"GER":[],"CUW":[],"CIV":[],"ECU":[],"NED":[],"JPN":[],"SWE":[],"TUN":[],"BEL":[],"EGY":[],"IRN":[],"NZL":[],"ESP":[],"CPV":[],"KSA":[],"URU":[],"FRA":[],"SEN":[],"IRQ":[],"NOR":[],"ARG":[{"name":"Emiliano Martínez","position":"Goalkeeper","stars":5},{"name":"Geronimo Rulli","position":"Goalkeeper","stars":3},{"name":"Juan Musso","position":"Goalkeeper","stars":3},{"name":"Nahuel Molina","position":"Defender","stars":4},{"name":"Gonzalo Montiel","position":"Defender","stars":3},{"name":"Cristian Romero","position":"Defender","stars":5},{"name":"Leonardo Balerdi","position":"Defender","stars":3},{"name":"Nicolas Otamendi","position":"Defender","stars":4},{"name":"Lisandro Martinez","position":"Defender","stars":4},{"name":"Nicolas Tagliafico","position":"Defender","stars":4},{"name":"Facundo Medina","position":"Defender","stars":3},{"name":"Leandro Paredes","position":"Midfielder","stars":4},{"name":"Alexis Mac Allister","position":"Midfielder","stars":5},{"name":"Rodrigo De Paul","position":"Midfielder","stars":4},{"name":"Giovani Lo Celso","position":"Midfielder","stars":4},{"name":"Exequiel Palacios","position":"Midfielder","stars":4},{"name":"Enzo Fernandez","position":"Midfielder","stars":5},{"name":"Valentin Barco","position":"Midfielder","stars":3},{"name":"Lionel Messi","position":"Forward","stars":5},{"name":"Julian Alvarez","position":"Forward","stars":5},{"name":"Lautaro Martinez","position":"Forward","stars":5},{"name":"Thiago Almada","position":"Forward","stars":4},{"name":"Nicolas Paz","position":"Forward","stars":4},{"name":"Nicolas Gonzalez","position":"Forward","stars":4},{"name":"Giuliano Simeone","position":"Forward","stars":3},{"name":"Jose Manuel Lopez","position":"Forward","stars":3}],"ALG":[],"AUT":[],"JOR":[],"POR":[],"COD":[],"UZB":[],"COL":[],"ENG":[],"CRO":[],"GHA":[],"PAN":[],"_rating_note":"Stars are subjective 1–5 quality/form tiers for prediction help, not official FIFA ratings."};
+
+
 const TEAM_COLOURS = {
   MEX:["#006847","#ffffff","#CE1126"], RSA:["#007749","#FFB81C","#DE3831"], KOR:["#ffffff","#CD2E3A","#0047A0"], CZE:["#11457E","#ffffff","#D7141A"],
   CAN:["#D80621","#ffffff","#D80621"], BIH:["#002395","#FECB00","#ffffff"], QAT:["#8A1538","#ffffff","#8A1538"], SUI:["#D52B1E","#ffffff","#D52B1E"],
@@ -971,8 +1109,13 @@ function teamBadge(code, extraClass=""){
   const filename = `${String(code).toLowerCase()}.png`;
   return `<img class="team-badge ${extraClass}" src="${filename}" alt="" loading="lazy" decoding="async">`;
 }
+function teamRankingText(code){
+  return TEAM_INFO[code] && TEAM_INFO[code].rank ? `FIFA #${TEAM_INFO[code].rank}` : "";
+}
 function teamInline(code, codeLine="", reverse=false){
-  return `<span class="team-flex ${reverse?"reverse":""}">${teamBadge(code)}<span class="team-copy"><span class="label">${esc(displayTeam(code))}</span>${codeLine?`<span class="team-code">${esc(codeLine)}</span>`:""}</span></span>`;
+  const rankText=teamRankingText(code);
+  const context=codeLine ? `${esc(codeLine)}${rankText ? ` · <span class="ranking">${esc(rankText)}</span>` : ""}` : (rankText ? `<span class="ranking">${esc(rankText)}</span>` : "");
+  return `<span class="team-flex ${reverse?"reverse":""}">${teamBadge(code)}<span class="team-copy"><span class="label">${esc(displayTeam(code))}</span>${context?`<span class="team-code">${context}</span>`:""}</span></span>`;
 }
 
 const GROUPS = {"A":["MEX","RSA","KOR","CZE"],"B":["CAN","BIH","QAT","SUI"],"C":["BRA","MAR","HAI","SCO"],"D":["USA","PAR","AUS","TUR"],"E":["GER","CUW","CIV","ECU"],"F":["NED","JPN","SWE","TUN"],"G":["BEL","EGY","IRN","NZL"],"H":["ESP","CPV","KSA","URU"],"I":["FRA","SEN","IRQ","NOR"],"J":["ARG","ALG","AUT","JOR"],"K":["POR","COD","UZB","COL"],"L":["ENG","CRO","GHA","PAN"]};
@@ -997,7 +1140,7 @@ let liveFeed = {events:[], loading:false, error:"", lastUpdated:null, applied:0}
 
 const emptyState = () => ({
   groupScores:{}, knockoutScores:{}, groupTieOrders:{}, thirdTieOrders:{}, officialResults:{},
-  activeTab:"groups", groupFilter:"ALL", userName:"", autoOpenedKnockout:false
+  activeTab:"groups", groupFilter:"ALL", teamInfoFilter:"ALL", userName:"", autoOpenedKnockout:false
 });
 let state = loadState();
 
@@ -1515,6 +1658,114 @@ function fixtureLine(f){
     </div>
   </div>`;
 }
+function titleText(number){
+  if(!number) return "None";
+  return `${number} title${number===1 ? "" : "s"}`;
+}
+function squadPlayers(code){
+  const entry=officialSquads && officialSquads[code];
+  if(Array.isArray(entry)) return entry;
+  if(entry && Array.isArray(entry.players)) return entry.players;
+  return [];
+}
+function starRatingMarkup(value){
+  const stars=Math.max(0,Math.min(5,Number(value) || 0));
+  if(!stars) return "";
+  return `<span class="squad-rating" aria-label="${stars} out of 5 stars">${"★".repeat(stars)}<span class="empty-star">${"★".repeat(5-stars)}</span></span>`;
+}
+function playerMarkup(player){
+  const name=typeof player==="string" ? player : (player.name || player.fullName || "Player");
+  const position=typeof player==="object" && player.position ? player.position : "";
+  const stars=typeof player==="object" ? player.stars : 0;
+  return `<div class="squad-player"><span class="squad-player-main"><span>${esc(name)}</span>${position ? `<span class="squad-position">${esc(position)}</span>` : ""}</span><span class="squad-player-meta">${starRatingMarkup(stars)}</span></div>`;
+}
+function squadPositionGroup(position){
+  const value=String(position || "Other").toLowerCase();
+  if(value.includes("goal")) return "Goalkeepers";
+  if(value.includes("def")) return "Defenders";
+  if(value.includes("mid")) return "Midfielders";
+  if(value.includes("for") || value.includes("wing") || value.includes("striker")) return "Forwards";
+  return "Other";
+}
+function groupedSquadMarkup(players){
+  const order=["Goalkeepers","Defenders","Midfielders","Forwards","Other"];
+  const grouped=players.reduce((acc,player) => {
+    const group=squadPositionGroup(typeof player==="object" ? player.position : "");
+    (acc[group] ||= []).push(player);
+    return acc;
+  },{});
+  return order.filter(group => grouped[group] && grouped[group].length).map(group => `
+    <section class="squad-position-block">
+      <div class="squad-position-heading"><span>${group}</span><span>${grouped[group].length}</span></div>
+      <div class="squad-list grouped">${grouped[group].map(playerMarkup).join("")}</div>
+    </section>
+  `).join("");
+}
+function squadMarkup(code){
+  const players=squadPlayers(code);
+  if(players.length){
+    return `<p class="squad-ready">Squad loaded · ${players.length} players</p>${groupedSquadMarkup(players)}`;
+  }
+  return `<p class="squad-pending">Final World Cup squad pending official publication. FIFA states final 26-player lists follow team submissions on ${FINAL_SQUAD_SUBMISSION_DATE}.</p>`;
+}
+function teamInfoCard(code){
+  const info=TEAM_INFO[code] || {rank:"—",points:"—",titles:0};
+  return `<article class="info-team">
+    <div class="info-team-top">
+      <div class="info-team-name">${teamBadge(code)}<span>${esc(displayTeam(code))}</span></div>
+      <div class="rank-badge">#${esc(info.rank)}</div>
+    </div>
+    <div class="info-metrics">
+      <div class="info-metric"><small>FIFA Rank</small><strong>#${esc(info.rank)}</strong></div>
+      <div class="info-metric"><small>Points</small><strong>${typeof info.points==="number" ? info.points.toFixed(2) : esc(info.points)}</strong></div>
+      <div class="info-metric"><small>World Cups</small><strong>${esc(titleText(info.titles))}</strong></div>
+    </div>
+    <details class="squad-details">
+      <summary>World Cup squad <span>${squadPlayers(code).length ? "Available" : "Pending"}</span></summary>
+      <div class="squad-body">${squadMarkup(code)}</div>
+    </details>
+  </article>`;
+}
+function renderTeamInfoFilters(){
+  const selected=state.teamInfoFilter || "ALL";
+  document.getElementById("teamInfoFilters").innerHTML=["ALL",...GROUP_LETTERS].map(group =>
+    `<button class="filter ${selected===group?"active":""}" onclick="setTeamInfoFilter('${group}')">${group==="ALL"?"All Groups":`Group ${group}`}</button>`
+  ).join("");
+}
+function setTeamInfoFilter(group){
+  state.teamInfoFilter=group;
+  saveState();
+  renderTeamInfo();
+}
+function renderTeamInfo(){
+  const holder=document.getElementById("teamInfoGrid");
+  const note=document.getElementById("teamInfoNotice");
+  if(!holder || !note) return;
+  renderTeamInfoFilters();
+  note.innerHTML=`<strong>Ranking basis:</strong> FIFA/Coca-Cola Men's World Ranking snapshot dated ${FIFA_RANKING_SNAPSHOT}. <strong>Squad status:</strong> final World Cup squads are pending FIFA publication following the ${FINAL_SQUAD_SUBMISSION_DATE} submission deadline.`;
+  const chosen=(state.teamInfoFilter || "ALL")==="ALL" ? GROUP_LETTERS : [state.teamInfoFilter];
+  holder.innerHTML=chosen.map(group => `<section class="info-group"><h3>Group ${group}</h3><div class="info-team-list">${GROUPS[group].map(teamInfoCard).join("")}</div></section>`).join("");
+}
+async function loadOfficialSquads(){
+  // Browsers block fetch() from file:// pages. Embedded squad data is used in local/offline mode.
+  if(location.protocol === "file:"){
+    renderTeamInfo();
+    return;
+  }
+  try{
+    const response=await fetch("wc26-official-squads.json",{cache:"no-store"});
+    if(!response.ok) return;
+    const payload=await response.json();
+    if(payload && typeof payload==="object"){
+      officialSquads=payload;
+      renderTeamInfo();
+    }
+  } catch(error) {
+    // The optional official squad file may not exist or may be unreachable.
+    // Embedded fallback data remains available.
+  }
+}
+
 function renderGroupFilters(){
   const filters=["ALL",...GROUP_LETTERS];
   document.getElementById("groupFilters").innerHTML=filters.map(f => `<button class="filter ${state.groupFilter===f?"active":""}" onclick="setGroupFilter('${f}')">${f==="ALL"?"All":`Group ${f}`}</button>`).join("");
@@ -1759,20 +2010,21 @@ function renderSummary(){
 }
 function openTab(tab){
   state.activeTab=tab; saveState();
-  ["groups","live","standings","knockout"].forEach(id => {
+  ["groups","live","teams","standings","knockout"].forEach(id => {
     const selected=id===tab;
     document.getElementById(`tab-${id}`).classList.toggle("active", selected);
     document.getElementById(`tab-${id}`).setAttribute("aria-selected", String(selected));
     document.getElementById(`panel-${id}`).classList.toggle("active", selected);
   });
   if(tab==="live") renderLiveScores();
+  if(tab==="teams") renderTeamInfo();
   if(tab==="standings") renderStandings();
   if(tab==="knockout") renderKnockout();
 }
 function renderAll(){
   renderExperienceMeta();
   updatePlayerHeader();
-  renderGroups(); renderLiveScores(); renderStandings(); renderKnockout(); renderSummary(); openTab(state.activeTab || "groups");
+  renderGroups(); renderLiveScores(); renderTeamInfo(); renderStandings(); renderKnockout(); renderSummary(); openTab(state.activeTab || "groups");
 }
 function resetPredictions(){
   if(!confirm("Clear every group and knockout prediction? Your name will be kept.")) return;
@@ -1877,6 +2129,7 @@ function toast(message){
   clearTimeout(toastTimer); toastTimer=setTimeout(() => el.classList.remove("show"),2600);
 }
 renderAll();
+loadOfficialSquads();
 refreshLiveScores(false);
 if(!cleanUserName()) openNameModal();
 else maybeAutoOpenKnockout();

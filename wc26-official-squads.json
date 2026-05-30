@@ -1,0 +1,184 @@
+{
+  "_instructions": "After FIFA publishes final 26-player lists, replace each empty array with official players. Format example: [{\"name\":\"Player Name\",\"position\":\"Forward\"}]. Keep file named wc26-official-squads.json beside the HTML file.",
+  "_status": "Final squads pending official FIFA publication following submissions on 02 June 2026.",
+  "MEX": [],
+  "RSA": [],
+  "KOR": [],
+  "CZE": [],
+  "CAN": [],
+  "BIH": [],
+  "QAT": [],
+  "SUI": [],
+  "BRA": [],
+  "MAR": [],
+  "HAI": [],
+  "SCO": [],
+  "USA": [],
+  "PAR": [],
+  "AUS": [],
+  "TUR": [],
+  "GER": [],
+  "CUW": [],
+  "CIV": [],
+  "ECU": [],
+  "NED": [],
+  "JPN": [],
+  "SWE": [],
+  "TUN": [],
+  "BEL": [],
+  "EGY": [],
+  "IRN": [],
+  "NZL": [],
+  "ESP": [],
+  "CPV": [],
+  "KSA": [],
+  "URU": [],
+  "FRA": [],
+  "SEN": [],
+  "IRQ": [],
+  "NOR": [],
+  "ARG": [
+    {
+      "name": "Emiliano Martínez",
+      "position": "Goalkeeper",
+      "stars": 5
+    },
+    {
+      "name": "Geronimo Rulli",
+      "position": "Goalkeeper",
+      "stars": 3
+    },
+    {
+      "name": "Juan Musso",
+      "position": "Goalkeeper",
+      "stars": 3
+    },
+    {
+      "name": "Nahuel Molina",
+      "position": "Defender",
+      "stars": 4
+    },
+    {
+      "name": "Gonzalo Montiel",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "Cristian Romero",
+      "position": "Defender",
+      "stars": 5
+    },
+    {
+      "name": "Leonardo Balerdi",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "Nicolas Otamendi",
+      "position": "Defender",
+      "stars": 4
+    },
+    {
+      "name": "Lisandro Martinez",
+      "position": "Defender",
+      "stars": 4
+    },
+    {
+      "name": "Nicolas Tagliafico",
+      "position": "Defender",
+      "stars": 4
+    },
+    {
+      "name": "Facundo Medina",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "Leandro Paredes",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Alexis Mac Allister",
+      "position": "Midfielder",
+      "stars": 5
+    },
+    {
+      "name": "Rodrigo De Paul",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Giovani Lo Celso",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Exequiel Palacios",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Enzo Fernandez",
+      "position": "Midfielder",
+      "stars": 5
+    },
+    {
+      "name": "Valentin Barco",
+      "position": "Midfielder",
+      "stars": 3
+    },
+    {
+      "name": "Lionel Messi",
+      "position": "Forward",
+      "stars": 5
+    },
+    {
+      "name": "Julian Alvarez",
+      "position": "Forward",
+      "stars": 5
+    },
+    {
+      "name": "Lautaro Martinez",
+      "position": "Forward",
+      "stars": 5
+    },
+    {
+      "name": "Thiago Almada",
+      "position": "Forward",
+      "stars": 4
+    },
+    {
+      "name": "Nicolas Paz",
+      "position": "Forward",
+      "stars": 4
+    },
+    {
+      "name": "Nicolas Gonzalez",
+      "position": "Forward",
+      "stars": 4
+    },
+    {
+      "name": "Giuliano Simeone",
+      "position": "Forward",
+      "stars": 4
+    },
+    {
+      "name": "Jose Manuel Lopez",
+      "position": "Forward",
+      "stars": 3
+    }
+  ],
+  "ALG": [],
+  "AUT": [],
+  "JOR": [],
+  "POR": [],
+  "COD": [],
+  "UZB": [],
+  "COL": [],
+  "ENG": [],
+  "CRO": [],
+  "GHA": [],
+  "PAN": [],
+  "_rating_note": "Stars are subjective 1–5 quality/form tiers for prediction help, not official FIFA ratings."
+}
