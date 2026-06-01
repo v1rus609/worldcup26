@@ -108,6 +108,106 @@ h1 {
     flex-wrap: wrap;
     text-align: center;
 }
+
+.nav-shell {
+  position: relative;
+  margin: 18px 0;
+}
+
+.nav-hint {
+  display: none;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
+  opacity: .9;
+}
+
+.nav {
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  padding-inline: 34px;
+}
+
+.tab {
+  scroll-snap-align: center;
+}
+
+.nav-shell::before,
+.nav-shell::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  bottom: 0;
+  width: 42px;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.nav-shell::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(6,13,12,.98), transparent);
+}
+
+.nav-shell::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(6,13,12,.98), transparent);
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-20%);
+  z-index: 4;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid rgba(5,223,202,.25);
+  background: rgba(7,17,15,.88);
+  color: var(--wc-lime);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.nav-arrow-left {
+  left: 5px;
+}
+
+.nav-arrow-right {
+  right: 5px;
+}
+
+@media (max-width: 700px) {
+  .nav-hint {
+    display: block;
+  }
+
+  .nav {
+    justify-content: flex-start;
+    padding-inline: 34px;
+  }
+
+  .tab {
+    flex: 0 0 auto;
+  }
+}
+
+@media (min-width: 901px) {
+  .nav-hint,
+  .nav-arrow,
+  .nav-shell::before,
+  .nav-shell::after {
+    display: none;
+  }
+
+  .nav {
+    padding-inline: 6px;
+  }
+}
 .section-head h2{font-size:clamp(19px,2vw,22px);margin:0;line-height:1.25}
 .section-note{font-size:13px;color:var(--muted);margin-top:2px}
 .filters{display:flex;gap:6px;overflow-x:auto;padding:2px 1px 7px;scrollbar-width:none;-webkit-overflow-scrolling:touch;max-width:100%}
@@ -277,7 +377,7 @@ tr.third{background:rgba(169,124,255,.11)}
   :root{--touch:46px}
   .app{padding:max(9px,env(safe-area-inset-top)) max(9px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(9px,env(safe-area-inset-left))}
   .hero{padding:16px 13px}
-  .hero-top{gap:15px}
+  .hero-top{gap:0px}
     .actions {
         display: flex;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -444,6 +544,13 @@ body::before{
 .wc-wordmark .fifa{display:block;font-size:clamp(13px,1.1vw,16px);letter-spacing:-.02em;margin-bottom:3px}
 .wc-wordmark .world{display:block;font-size:clamp(21px,2.15vw,30px)}
 .wc-wordmark .year{display:inline-block;font-size:clamp(23px,2.35vw,33px);margin-left:4px}
+.powered-by {
+    display: block;
+    width: 220px;
+    flex: 0 0 74px;
+    object-fit: contain;
+    filter: drop-shadow(0 9px 18px rgba(0, 0, 0, .36));
+}
 .brand-pattern{
   display:grid;grid-template-columns:repeat(5,38px);height:56px;overflow:hidden;
   border-radius:10px;flex:0 0 auto;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)
@@ -577,6 +684,9 @@ td{border-color:rgba(255,255,255,.075)}
   .ko-team .team-copy .label{font-size:14px}
   .fixture-meta{font-size:9px}
   .round h3{margin-top:8px}
+  .powered-by {
+    width: 120px;
+}
 }
 @media(max-width:390px){
   .brand-strip{display:block}
@@ -984,7 +1094,9 @@ body.modal-open{overflow:hidden}
       <div>
         <div class="kicker">World Cup 26 · Full Predictor</div>
         <h1>Predict every match. Build the bracket.</h1>
+		
       </div>
+	  <img class="powered-by" src="powered by.png" alt="FIFA World Cup 26 logo" decoding="async">
       <div class="actions">
         <div class="player-chip" aria-label="Prediction owner">
           <div class="player-meta"><strong id="playerNameHeader">Your name</strong></div>
@@ -1003,16 +1115,29 @@ body.modal-open{overflow:hidden}
     <div id="summary" class="summary"></div>
   </header>
 
-  <nav class="nav" aria-label="Predictor sections" role="tablist">
-  
+<div class="nav-shell" aria-label="Section navigation">
+  <div class="nav-hint">
+    <span>← Swipe to explore sections →</span>
+  </div>
+
+  <button class="nav-arrow nav-arrow-left" type="button" aria-label="Scroll navigation left" onclick="scrollNav(-1)">
+    ‹
+  </button>
+
+  <nav id="mainNav" class="nav" aria-label="Predictor sections" role="tablist">
     <button id="tab-groups" class="tab active" role="tab" aria-controls="panel-groups" aria-selected="true" onclick="openTab('groups')">Group Fixtures</button>
-    <button id="tab-standings" class="tab" role="tab" aria-controls="panel-standings" aria-selected="false" onclick="openTab('standings')">Tables & Qualifiers</button>
-	<button id="tab-knockout" class="tab" role="tab" aria-controls="panel-knockout" aria-selected="false" onclick="openTab('knockout')">Knockout Bracket</button>
-	<button id="tab-live" class="tab" role="tab" aria-controls="panel-live" aria-selected="false" onclick="openTab('live')">Live Scores <span id="liveNavBadge" class="nav-live-badge hidden">0</span></button>
+    <button id="tab-standings" class="tab" role="tab" aria-controls="panel-standings" aria-selected="false" onclick="openTab('standings')">Tables &amp; Qualifiers</button>
+    <button id="tab-knockout" class="tab" role="tab" aria-controls="panel-knockout" aria-selected="false" onclick="openTab('knockout')">Knockout Bracket</button>
+    <button id="tab-live" class="tab" role="tab" aria-controls="panel-live" aria-selected="false" onclick="openTab('live')">
+      Live Scores <span id="liveNavBadge" class="nav-live-badge hidden"></span>
+    </button>
     <button id="tab-teams" class="tab" role="tab" aria-controls="panel-teams" aria-selected="false" onclick="openTab('teams')">Team Info</button>
-    
-    
   </nav>
+
+  <button class="nav-arrow nav-arrow-right" type="button" aria-label="Scroll navigation right" onclick="scrollNav(1)">
+    ›
+  </button>
+</div>
 
   <section id="panel-live" class="panel" role="tabpanel" aria-labelledby="tab-live">
     <div class="section-head">
@@ -1102,7 +1227,7 @@ const TEAMS = {"MEX":{"name":"Mexico","group":"A"},"RSA":{"name":"South Africa",
 const TEAM_INFO = {"MEX":{"rank":15,"points":1681.03,"titles":0},"RSA":{"rank":60,"points":1429.73,"titles":0},"KOR":{"rank":25,"points":1588.66,"titles":0},"CZE":{"rank":41,"points":1501.38,"titles":0},"CAN":{"rank":30,"points":1556.48,"titles":0},"BIH":{"rank":65,"points":1385.84,"titles":0},"QAT":{"rank":55,"points":1454.96,"titles":0},"SUI":{"rank":19,"points":1649.4,"titles":0},"BRA":{"rank":6,"points":1761.16,"titles":5},"MAR":{"rank":8,"points":1755.87,"titles":0},"HAI":{"rank":83,"points":1291.71,"titles":0},"SCO":{"rank":43,"points":1498.35,"titles":0},"USA":{"rank":16,"points":1673.13,"titles":0},"PAR":{"rank":40,"points":1503.5,"titles":0},"AUS":{"rank":27,"points":1580.67,"titles":0},"TUR":{"rank":22,"points":1599.04,"titles":0},"GER":{"rank":10,"points":1730.37,"titles":4},"CUW":{"rank":82,"points":1294.65,"titles":0},"CIV":{"rank":34,"points":1532.98,"titles":0},"ECU":{"rank":23,"points":1594.78,"titles":0},"NED":{"rank":7,"points":1757.87,"titles":0},"JPN":{"rank":18,"points":1660.43,"titles":0},"SWE":{"rank":38,"points":1514.77,"titles":0},"TUN":{"rank":44,"points":1483.05,"titles":0},"BEL":{"rank":9,"points":1734.71,"titles":0},"EGY":{"rank":29,"points":1563.24,"titles":0},"IRN":{"rank":21,"points":1615.3,"titles":0},"NZL":{"rank":85,"points":1281.57,"titles":0},"ESP":{"rank":2,"points":1876.4,"titles":1},"CPV":{"rank":69,"points":1366.13,"titles":0},"KSA":{"rank":61,"points":1421.43,"titles":0},"URU":{"rank":17,"points":1673.07,"titles":2},"FRA":{"rank":1,"points":1877.32,"titles":2},"SEN":{"rank":14,"points":1688.99,"titles":0},"IRQ":{"rank":57,"points":1447.14,"titles":0},"NOR":{"rank":31,"points":1550.94,"titles":0},"ARG":{"rank":3,"points":1874.81,"titles":3},"ALG":{"rank":28,"points":1564.26,"titles":0},"AUT":{"rank":24,"points":1593.45,"titles":0},"JOR":{"rank":63,"points":1391.45,"titles":0},"POR":{"rank":5,"points":1763.83,"titles":0},"COD":{"rank":46,"points":1478.35,"titles":0},"UZB":{"rank":50,"points":1465.34,"titles":0},"COL":{"rank":13,"points":1693.09,"titles":0},"ENG":{"rank":4,"points":1825.97,"titles":1},"CRO":{"rank":11,"points":1717.07,"titles":0},"GHA":{"rank":74,"points":1346.31,"titles":0},"PAN":{"rank":33,"points":1540.64,"titles":0}};
 const FIFA_RANKING_SNAPSHOT = "01 April 2026";
 const FINAL_SQUAD_SUBMISSION_DATE = "02 June 2026";
-let officialSquads = {"_instructions":"After FIFA publishes final 26-player lists, replace each empty array with official players. Format example: [{\"name\":\"Player Name\",\"position\":\"Forward\"}]. Keep file named wc26-official-squads.json beside the HTML file.","_status":"Final squads pending official FIFA publication following submissions on 02 June 2026.","MEX":[],"RSA":[],"KOR":[],"CZE":[],"CAN":[],"BIH":[],"QAT":[],"SUI":[],"BRA":[],"MAR":[],"HAI":[],"SCO":[],"USA":[],"PAR":[],"AUS":[],"TUR":[],"GER":[],"CUW":[],"CIV":[],"ECU":[],"NED":[],"JPN":[],"SWE":[],"TUN":[],"BEL":[],"EGY":[],"IRN":[],"NZL":[],"ESP":[],"CPV":[],"KSA":[],"URU":[],"FRA":[],"SEN":[],"IRQ":[],"NOR":[],"ARG":[{"name":"Emiliano Martínez","position":"Goalkeeper","stars":5},{"name":"Geronimo Rulli","position":"Goalkeeper","stars":3},{"name":"Juan Musso","position":"Goalkeeper","stars":3},{"name":"Nahuel Molina","position":"Defender","stars":4},{"name":"Gonzalo Montiel","position":"Defender","stars":3},{"name":"Cristian Romero","position":"Defender","stars":5},{"name":"Leonardo Balerdi","position":"Defender","stars":3},{"name":"Nicolas Otamendi","position":"Defender","stars":4},{"name":"Lisandro Martinez","position":"Defender","stars":4},{"name":"Nicolas Tagliafico","position":"Defender","stars":4},{"name":"Facundo Medina","position":"Defender","stars":3},{"name":"Leandro Paredes","position":"Midfielder","stars":4},{"name":"Alexis Mac Allister","position":"Midfielder","stars":5},{"name":"Rodrigo De Paul","position":"Midfielder","stars":4},{"name":"Giovani Lo Celso","position":"Midfielder","stars":4},{"name":"Exequiel Palacios","position":"Midfielder","stars":4},{"name":"Enzo Fernandez","position":"Midfielder","stars":5},{"name":"Valentin Barco","position":"Midfielder","stars":3},{"name":"Lionel Messi","position":"Forward","stars":5},{"name":"Julian Alvarez","position":"Forward","stars":5},{"name":"Lautaro Martinez","position":"Forward","stars":5},{"name":"Thiago Almada","position":"Forward","stars":4},{"name":"Nicolas Paz","position":"Forward","stars":4},{"name":"Nicolas Gonzalez","position":"Forward","stars":4},{"name":"Giuliano Simeone","position":"Forward","stars":3},{"name":"Jose Manuel Lopez","position":"Forward","stars":3}],"ALG":[],"AUT":[],"JOR":[],"POR":[],"COD":[],"UZB":[],"COL":[],"ENG":[],"CRO":[],"GHA":[],"PAN":[],"_rating_note":"Stars are subjective 1–5 quality/form tiers for prediction help, not official FIFA ratings."};
+let officialSquads = {};
 
 
 const TEAM_COLOURS = {
@@ -2039,6 +2164,8 @@ function renderAll(){
   renderExperienceMeta();
   updatePlayerHeader();
   renderGroups(); renderLiveScores(); renderTeamInfo(); renderStandings(); renderKnockout(); renderSummary(); openTab(state.activeTab || "groups");
+  
+  
 }
 function resetPredictions(){
   if(!confirm("Clear every group and knockout prediction? Your name will be kept.")) return;
@@ -2137,6 +2264,17 @@ async function downloadPredictionPDF(){
     report.classList.remove("exporting");
   }
 }
+
+function scrollNav(direction) {
+  const nav = document.getElementById("mainNav");
+  if (!nav) return;
+
+  nav.scrollBy({
+    left: direction * 180,
+    behavior: "smooth"
+  });
+}
+
 let toastTimer;
 function toast(message){
   const el=document.getElementById("toast"); el.textContent=message; el.classList.add("show");

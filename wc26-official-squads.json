@@ -1,7 +1,138 @@
 {
   "_instructions": "After FIFA publishes final 26-player lists, replace each empty array with official players. Format example: [{\"name\":\"Player Name\",\"position\":\"Forward\"}]. Keep file named wc26-official-squads.json beside the HTML file.",
   "_status": "Final squads pending official FIFA publication following submissions on 02 June 2026.",
-  "MEX": [],
+  "MEX": [
+    {
+      "name": "Carlos Acevedo",
+      "position": "Goalkeeper",
+      "stars": 3
+    },
+    {
+      "name": "Guillermo Ochoa",
+      "position": "Goalkeeper",
+      "stars": 3
+    },
+    {
+      "name": "Raúl Rangel",
+      "position": "Goalkeeper",
+      "stars": 3
+    },
+    {
+      "name": "Jesús Gallardo",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "Israel Reyes",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "César Montes",
+      "position": "Defender",
+      "stars": 4
+    },
+    {
+      "name": "Jorge Sánchez",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "Johan Vásquez",
+      "position": "Defender",
+      "stars": 4
+    },
+    {
+      "name": "Mateo Chávez",
+      "position": "Defender",
+      "stars": 3
+    },
+    {
+      "name": "Gilberto Mora",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Edson Álvarez",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Orbelín Pineda",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Luis Romo",
+      "position": "Midfielder",
+      "stars": 3
+    },
+    {
+      "name": "Brian Gutiérrez",
+      "position": "Midfielder",
+      "stars": 3
+    },
+    {
+      "name": "Obed Vargas",
+      "position": "Midfielder",
+      "stars": 3
+    },
+    {
+      "name": "César Huerta",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Luis Chávez",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Erik Lira",
+      "position": "Midfielder",
+      "stars": 3
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Roberto Alvarado",
+      "position": "Midfielder",
+      "stars": 4
+    },
+    {
+      "name": "Armando González",
+      "position": "Forward",
+      "stars": 3
+    },
+    {
+      "name": "Raúl Jiménez",
+      "position": "Forward",
+      "stars": 5
+    },
+    {
+      "name": "Julián Quiñones",
+      "position": "Forward",
+      "stars": 4
+    },
+    {
+      "name": "Santiago Gimenez",
+      "position": "Forward",
+      "stars": 4
+    },
+    {
+      "name": "Guillermo Martínez",
+      "position": "Forward",
+      "stars": 3
+    },
+    {
+      "name": "Alexis Vega",
+      "position": "Forward",
+      "stars": 4
+    }
+  ],
   "RSA": [],
   "KOR": [],
   "CZE": [],
