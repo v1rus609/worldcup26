@@ -397,7 +397,138 @@
       "stars": 3
     }
   ],
-  "CZE": [],
+  "CZE": [
+  {
+    "name": "Lukáš Horníček",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Matěj Kovář",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Jindřich Staněk",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Vladimír Coufal",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "David Doudera",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Tomáš Holeš",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Robin Hranáč",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Štěpán Chaloupek",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "David Jurásek",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Ladislav Krejčí",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Jaroslav Zelený",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "David Zima",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Lukáš Červ",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Vladimír Darida",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Lukáš Provod",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Michal Sadílek",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Hugo Sochurek",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Alexandr Sojka",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Tomáš Souček",
+    "position": "Midfielder",
+    "stars": 5
+  },
+  {
+    "name": "Pavel Šulc",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Denis Višinský",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Adam Hložek",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Tomáš Chorý",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Mojmír Chytil",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Jan Kuchta",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Patrik Schick",
+    "position": "Forward",
+    "stars": 5
+  }
+],
   "CAN": [
     {
       "name": "Dayne St. Clair",
@@ -662,7 +793,138 @@
       "stars": 4
     }
   ],
-  "QAT": [],
+  "QAT": [
+  {
+    "name": "Salah Zakaria",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Mahmoud Abunada",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Meshaal Barsham",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Hashmi Hussein",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Ayoub Alawi",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Boualem Khoukhi",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Pedro Miguel",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Issa Laaye",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Lucas Mendes",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Sultan Al-Brake",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Homam Al-Amin",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Mohammed Al-Manai",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Jassem Jaber",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Karim Boudiaf",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Ahmed Fathi",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Abdulaziz Hatem",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Assim Madibo",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Tahseen Mohammed",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Edmilson Junior",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Almoez Ali",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Akram Afif",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Mohammed Muntari",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Youssef Abdulrazzaq",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Ahmed Alaa",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Hassan Al-Haydos",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Ahmed Al-Janahi",
+    "position": "Forward",
+    "stars": 3
+  }
+],
   "SUI": [
     {
       "name": "Gregor Kobel",
@@ -1455,7 +1717,138 @@
       "stars": 4
     }
   ],
-  "PAR": [],
+  "PAR": [
+  {
+    "name": "Orlando Gill",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Roberto Fernández",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Gastón Olveira",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Juan Cáceres",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Gustavo Velázquez",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Gustavo Gómez",
+    "position": "Defender",
+    "stars": 5
+  },
+  {
+    "name": "Junior Alonso",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "José Canale",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Omar Alderete",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Alexandro Maidana",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Fabián Balbuena",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Diego Gómez",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Mauricio Magalhães",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Damián Bobadilla",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Braian Ojeda",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Andrés Cubas",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Matías Galarza",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Alejandro Gamarra",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Gustavo Caballero",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Ramón Sosa",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Alex Arce",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Isidro Pitta",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Gabriel Ávalos",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Miguel Almirón",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Julio Enciso",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Antonio Sanabria",
+    "position": "Forward",
+    "stars": 4
+  }
+],
   "AUS": [
     {
       "name": "Mathew Ryan",
@@ -1588,7 +1981,183 @@
       "stars": 3
     }
   ],
-  "TUR": [],
+  "TUR": [
+  {
+    "name": "Altay Bayındır",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Ersin Destanoğlu",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Mert Günok",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Muhammed Şengezer",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Uğurcan Çakır",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Abdülkerim Bardakcı",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Ahmetcan Kaplan",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Çağlar Söyüncü",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Eren Elmalı",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Ferdi Kadıoğlu",
+    "position": "Defender",
+    "stars": 5
+  },
+  {
+    "name": "Merih Demiral",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Mert Müldür",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Mustafa Eskihellaç",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Ozan Kabak",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Samet Akaydın",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Yusuf Akçiçek",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Zeki Çelik",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Atakan Karazor",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Demir Ege Tıknaz",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Hakan Çalhanoğlu",
+    "position": "Midfielder",
+    "stars": 5
+  },
+  {
+    "name": "İsmail Yüksek",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Kaan Ayhan",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Orkun Kökçü",
+    "position": "Midfielder",
+    "stars": 5
+  },
+  {
+    "name": "Salih Özcan",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Aral Şimşir",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Arda Güler",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Barış Alper Yılmaz",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Can Uzun",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Deniz Gül",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "İrfan Can Kahveci",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Kenan Yıldız",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Kerem Aktürkoğlu",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Oğuz Aydın",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Yunus Akgün",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Yusuf Sarı",
+    "position": "Forward",
+    "stars": 3
+  }
+],
   "GER": [
     {
       "name": "Oliver Baumann",
@@ -3843,8 +4412,280 @@
       "stars": 4
     }
   ],
-  "SEN": [],
-  "IRQ": [],
+  "SEN": [
+  {
+    "name": "Mory Diaw",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Yehvann Diouf",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Édouard Mendy",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Ilay Camara",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Krépin Diatta",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "El Hadji Malick Diouf",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Ismaïl Jakobs",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Kalidou Koulibaly",
+    "position": "Defender",
+    "stars": 5
+  },
+  {
+    "name": "Moustapha Mbow",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Antoine Mendy",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Moussa Niakhaté",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Mamadou Sarr",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Abdoulaye Seck",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Lamine Camara",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Pathé Ciss",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Habib Diarra",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Idrissa Gana Gueye",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Pape Gueye",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Pape Matar Sarr",
+    "position": "Midfielder",
+    "stars": 5
+  },
+  {
+    "name": "Bara Sapoko Ndiaye",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Assane Diao",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Bamba Dieng",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Nicolas Jackson",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Sadio Mané",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Ibrahim Mbaye",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Chérif Ndiaye",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Iliman Ndiaye",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Ismaïla Sarr",
+    "position": "Forward",
+    "stars": 4
+  }
+],
+  "IRQ": [
+  {
+    "name": "Fahad Talib",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Jalal Hassan",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Ahmed Basil",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Hussein Ali",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Manaf Younis",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Ahmed Yahya",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Mustafa Saadoon",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Zaid Tahseen",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Rebin Sulaka",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Akam Hashim",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Merchas Doski",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Zaid Ismail",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Frans Putros",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Amir Al-Ammari",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Kevin Yakob",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Zidane Iqbal",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Aimar Sher",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Ibrahim Bayesh",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Ahmed Qasem",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Youssef Amyn",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Marko Farji",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Ali Jassim",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Ali Al-Hamadi",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Ali Yousef",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Aymen Hussein",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Mohanad Ali",
+    "position": "Forward",
+    "stars": 4
+  }
+],
   "NOR": [
     {
       "name": "Ørjan Nyland",
@@ -4373,7 +5214,158 @@
       "stars": 3
     }
   ],
-  "JOR": [],
+  "JOR": [
+  {
+    "name": "Yazid Abulaila",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Abdallah Al Fakhouri",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Ahmad Al Juaidi",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Nour Bani Attiah",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Mohammad Abualnadi",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Yousef Abu Al Jazar",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Husam Abu Dahab",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Mohammad Abu Hashish",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Mohannad Abu Taha",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Yazan Al Arab",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Saed Al Rosan",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Ahmad Assaf",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Anas Badawi",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Abdallah Nasib",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Ehsan Haddad",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Saleem Obaid",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Mohammad Taha",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Mohammad Al Dawoud",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Nizar Al Rashdan",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Noor Al Rawabdeh",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Rajaei Ayed",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Amer Jamous",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Yousef Qashi",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Ibrahim Sadeh",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Mohammad Abu Zraiq",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Mousa Al Tamari",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Ali Azaizeh",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Odeh Fakhoury",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Ali Olwan",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Ibrahim Sabra",
+    "position": "Forward",
+    "stars": 3
+  }
+],
   "POR": [
     {
       "name": "Diogo Costa",
@@ -4643,7 +5635,158 @@
       "stars": 4
     }
   ],
-  "UZB": [],
+  "UZB": [
+  {
+    "name": "Botirali Ergashev",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Abduvohid Nematov",
+    "position": "Goalkeeper",
+    "stars": 4
+  },
+  {
+    "name": "Utkir Yusupov",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Abdullah Abdullaev",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Khojiakbar Alijonov",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Rustamjon Ashurmatov",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Umarbek Eshmuradov",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Bekhruz Karimov",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Abdukodir Khusanov",
+    "position": "Defender",
+    "stars": 5
+  },
+  {
+    "name": "Sherzod Nasrullaev",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Umaraali Rakhmonaliev",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Farrukh Sayfiev",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Avazbek Ulmasaliev",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Jakhongir Urozov",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Ruslanbek Yiyanov",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Sherzod Esanov",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Azizbek Ganiev",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Dostonbek Hamdamov",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Odiljon Hamrobekov",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Jamshid Iskanderov",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Jashur Jaloliddinov",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Akmal Mozgovoy",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Otabek Shukurov",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Azizbek Amonov",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Abbosbek Fayzullaev",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Jaloliddin Masharipov",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Eldor Shomurodov",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Igor Sergeev",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Sherzod Temirov",
+    "position": "Forward",
+    "stars": 3
+  },
+  {
+    "name": "Oston Urunov",
+    "position": "Forward",
+    "stars": 4
+  }
+],
   "COL": [
     {
       "name": "David Ospina",
@@ -5040,7 +6183,133 @@
       "stars": 3
     }
   ],
-  "GHA": [],
+  "GHA": [
+  {
+    "name": "Lawrence Ati-Zigi",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Benjamin Asare",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Joseph Anang",
+    "position": "Goalkeeper",
+    "stars": 3
+  },
+  {
+    "name": "Baba Abdul Rahman",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Gideon Mensah",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Marvin Senaya",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Alidu Seidu",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Abdul Mumin",
+    "position": "Defender",
+    "stars": 4
+  },
+  {
+    "name": "Jerome Opoku",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Jonas Adjetey",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Kojo Oppong Peprah",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Derrick Luckassen",
+    "position": "Defender",
+    "stars": 3
+  },
+  {
+    "name": "Elisha Owusu",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Thomas Partey",
+    "position": "Midfielder",
+    "stars": 5
+  },
+  {
+    "name": "Kwasi Sibo",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Augustine Boakye",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Caleb Yirenkyi",
+    "position": "Midfielder",
+    "stars": 3
+  },
+  {
+    "name": "Abdul Fatawu Issahaku",
+    "position": "Midfielder",
+    "stars": 4
+  },
+  {
+    "name": "Antoine Semenyo",
+    "position": "Forward",
+    "stars": 5
+  },
+  {
+    "name": "Jordan Ayew",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Iñaki Williams",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Kamaldeen Sulemana",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Ernest Nuamah",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Christopher Bonsu Baah",
+    "position": "Forward",
+    "stars": 4
+  },
+  {
+    "name": "Prince Kwabena Adu",
+    "position": "Forward",
+    "stars": 3
+  }
+],
   "PAN": [
     {
       "name": "Orlando Mosquera",
